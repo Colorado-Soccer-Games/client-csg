@@ -12,12 +12,16 @@
 <div class="wrapperz">
 <div class="left">
 <div class="about-text">
-  <p>SCG is a web application for the people of Colorado to help orgainize & track statistical data for all active pick-up soccer games across the state. </p>
+  <p>SCG is a web application for the people of Colorado to help orgainize & track statistical data for all active pick-up soccer games across the state.
+    <br>
+        <br>
+    A web application for creating/scheduling pickup soccer games in and around Colorado. Features include “RSVP” to games functionality while displaying trending past game statistics.
+  </p>
 </div>
 </div>
 <div class="right">
     <h1>VIEW GAME DATA</h1>
-       <p>SCG is a web application for the people of Colorado to help orgainize & track statistical data for all active pick-up soccer games across the state.</p>
+       <p>SCG is a web application for the people of Colorado to help.</p>
         <br>
        <h1>GET FEILD INFO</h1>
               <p>aksjdklasjdklsjad</p>
@@ -25,10 +29,10 @@
                <h1>JOIN A GAME</h1>
                              <p>aksjdklasjdklsjad</p>
         <br>
-        <h1>SET TEXT REMINDERS</h1>
+        <h1>SET TEXT UPDATES</h1>
                                      <p>aksjdklasjdklsjad</p>
         <br>
-        <hr>
+
         <h4> CREATE/HOST A GAME</h4>
 
 </div>
@@ -100,10 +104,10 @@ h1 {
       /* border-top: 4px #aaa solid; */
   font-family: 'Lato', sans-serif;
         font-weight: 900;
-        max-width: 230px;
+        max-width: 190px;
         height: 30px;
         border-top-right-radius: 2px;
-                border-bottom-right-radius: 100px;
+                border-bottom-right-radius: 10px;
                 border-bottom-left-radius: 2px;
 }
 h2 {
@@ -265,14 +269,15 @@ font-size: 18px;
 
 .left {
 background-color: #2EFD96;
-min-width: 50%;
+min-width: 33%;
 color:#222;
-padding: 1rem;
+padding: 1rem 1rem 1rem 1rem;
+/* padding-right: 35px; */
 /* min-height: 200px; */
 }
 .right {
 margin-right: 55px;
-min-width: 50%;
+min-width: 66%;
 }
 p {
   padding:4px 0 0 4px;

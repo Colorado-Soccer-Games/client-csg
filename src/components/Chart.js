@@ -18,7 +18,15 @@ export default {
         console.log('games', this.games)
       })
       .then(() => {
-        this.renderChart({ labels: ['Total Fields'], datasets: [{ label: 'Indoor', backgroundColor: '#2efd96', data: [this.games, 0] }] }, { responsive: HTMLOptGroupElement, maintainAspectRatio: false })
+        this.renderChart({ labels: ['Total Fields'],
+          datasets: [
+            {
+              label: 'Indoor',
+              backgroundColor: '#2efd96',
+              data: [this.games, 0] }] },
+        {
+          responsive: HTMLOptGroupElement,
+          maintainAspectRatio: false })
       })
   }
 }
