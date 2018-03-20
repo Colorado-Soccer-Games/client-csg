@@ -1,92 +1,82 @@
 <template>
   <div id="Wrapper">
-  <!-- <p>ksfjlsdk</p> -->
     <div class="labelwrap">
       <div id="Monday">
       <h1>MONDAY</h1>
-<div class="card">
-  <span>
-    <h2> Denver </h2>
-      <img class=" float time--icon" src="@/assets/normal.png"/>
-      <br>
-    <h3> Congress Park </h3>
-    <div class="deets">
-      <img class="time--icon" src="@/assets/dirt.png"/>
-      <img class="time--icon" src="@/assets/netless.png"/>
-      <img class="time--icon" src="@/assets/night.png"/>
-      <br>
-      <img class="time--icon" src="@/assets/lights.png"/>
-      <img class="time--icon" src="@/assets/water.png"/>
-    </div>
-    <div class="card-buttons">
-      <h4>Total:</h4> <span> {{count}} </span>
-      <br>
-      <button v-on:click="countUp"> Join </button>
-    </div>
-  </span>
-</div>
+           <div v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Monday'">
+          <h6>{{ field.location }} </h6>
+          <h6>{{ field.city }} </h6>
+        </div>
+            <!-- <div class="card">
+              <span>
+                <h2> Denver </h2>
+                  <img class=" float time--icon" src="@/assets/normal.png"/>
+                  <br>
+                <h3> Congress Park </h3>
+                <div class="deets">
+                  <img class="time--icon" src="@/assets/dirt.png"/>
+                  <img class="time--icon" src="@/assets/netless.png"/>
+                  <img class="time--icon" src="@/assets/night.png"/>
+                  <br>
+                  <img class="time--icon" src="@/assets/lights.png"/>
+                  <img class="time--icon" src="@/assets/water.png"/>
+                </div>
+                <div class="card-buttons">
+                  <h4>Total:</h4> <span> </span>
+                  <br>
+                  <button> Join </button>
+                </div>
+              </span>
+            </div> -->
       </div>
       <div id="Tuesday">
       <h1>TUESDAY</h1>
-
+       <div v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Tuesday'">
+          <h6>{{ field.location }} </h6>
+          <h6>{{ field.city }} </h6>
+        </div>
       </div>
       <div id="Wednesday">
       <h1>WEDNESDAY</h1>
-
+       <div v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Wednesday'">
+          <h6>{{ field.location }} </h6>
+          <h6>{{ field.city }} </h6>
+        </div>
       </div>
       <div id="Thursday">
       <h1>THURSDAY</h1>
+             <div v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Thursday'">
+          <h6>{{ field.location }} </h6>
+          <h6>{{ field.city }} </h6>
+        </div>
 
       </div>
       <div id="Friday">
       <h1>FRIDAY</h1>
-
+        <div v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Friday'">
+          <h6>{{ field.location }} </h6>
+          <h6>{{ field.city }} </h6>
+        </div>
       </div>
       <div id="Saturday">
       <h1>SATURDAY</h1>
+        <div v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Saturday'">
+          <h6>{{ field.location }} </h6>
+          <h6>{{ field.city }} </h6>
+        </div>
 
       </div>
       <div id="Sunday">
       <h1>SUNDAY</h1>
-
+        <div v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Sunday'">
+          <h6>{{ field.location }} </h6>
+          <h6>{{ field.city }} </h6>
+        </div>
       </div>
-
     </div>
     <br>
-<!-- <div class="card">
-  <span>
-    <h2> Denver </h2>
-      <img class=" float time--icon" src="@/assets/normal.png"/>
-      <br>
-    <h3> Congress Park </h3>
-    <div class="deets">
-      <img class="time--icon" src="@/assets/dirt.png"/>
-      <img class="time--icon" src="@/assets/netless.png"/>
-      <img class="time--icon" src="@/assets/night.png"/>
-      <br>
-      <img class="time--icon" src="@/assets/lights.png"/>
-      <img class="time--icon" src="@/assets/water.png"/>
-    </div>
-    <div class="card-buttons">
-      <h4>Total:</h4> <span> {{count}} </span>
-      <br>
-      <button v-on:click="countUp"> Join </button>
-    </div>
-  </span>
-</div> -->
 <br>
 </div>
-<!-- </div>
-       <div
-      v-bind:key="field.games"
-      v-for="field in data.games"
-      class="card">
-           <p>{{ field.city }}</p>
-           <p>{{ field.location }}</p>
-           <p>{{ field.info }}</p>
-           <p>{{ field.day }}</p>
-          <p>{{ field.time }}</p>
-</div> -->
 </template>
 
 <script>
@@ -94,8 +84,7 @@ export default {
   name: 'Week',
   data () {
     return {
-      data: [],
-      count: 1
+      data: []
     }
   },
   mounted () {
@@ -107,11 +96,8 @@ export default {
         .then(res => res.json())
         .then(data => {
           this.data = data
-          // console.log(data);
+          console.log(data);
         })
-    },
-    countUp: function () {
-      this.count += 1
     }
   }
 }
@@ -252,9 +238,4 @@ button:hover {
   background-color:#383838;
 }
 
-/* #Modnay h1 {
-      display: flex;
-  justify-content: center;
-  text-align: center;
-} */
 </style>

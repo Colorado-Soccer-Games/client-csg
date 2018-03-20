@@ -20,25 +20,21 @@
 </div>
 </div>
 <div class="right">
-    <h1>VIEW GAME DATA</h1>
-       <p>SCG is a web application for the people of Colorado to help.</p>
-        <br>
-       <h1>GET FEILD INFO</h1>
-              <p>aksjdklasjdklsjad</p>
-        <br>
-               <h1>JOIN A GAME</h1>
-                             <p>aksjdklasjdklsjad</p>
-        <br>
-        <h1>SET TEXT UPDATES</h1>
-                                     <p>aksjdklasjdklsjad</p>
-        <br>
-
-        <h4> CREATE/HOST A GAME</h4>
-
+<h1>VIEW GAME DATA</h1>
+<p>SCG is a web application for the people of Colorado to help.</p>
+<br>
+<h1>GET FEILD INFO</h1>
+<p>aksjdklasjdklsjad</p>
+<br>
+<h1>JOIN A GAME</h1>
+<p>aksjdklasjdklsjad</p>
+<br>
+<h1>SET TEXT UPDATES</h1>
+<p>aksjdklasjdklsjad</p>
+<br>
+<h4> CREATE/HOST A GAME</h4>
 </div>
 </div>
-
-
 <!-- <div class="check-wrap">
   <img class="icon" src="@/assets/check.png"/>
     <div class="wrapping">
