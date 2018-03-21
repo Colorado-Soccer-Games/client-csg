@@ -86,25 +86,25 @@
                       <br>
                       <input type="checkbox" name="field-type">
                       <span>
-                      <img class="time--icon" src="@/assets/restrooms.png"/>
+                      <img class="time--icon" src="../../static/full_restrooms.png"/>
                       <span>Restrooms</span>
                       </span>
                       <br>
                       <input type="checkbox" name="field-type">
                       <span>
-                      <img class="time--icon" src="@/assets/water.png"/>
+                      <img class="time--icon" src="../../static/full_water.png"/>
                       <span>Water</span>
                       </span>
                       <br>
                       <input type="checkbox" name="field-type">
                       <span>
-                      <img class="time--icon" src="@/assets/lights.png"/>
+                      <img class="time--icon" src="../../static/full_lights.png"/>
                       <span>Lights</span>
                       </span>
                       <br>
                       <input type="checkbox" name="field-type">
                       <span>
-                      <img class="time--icon" src="@/assets/parking.png"/>
+                      <img class="time--icon" src="../../static/full_parking.png"/>
                       <span>Parking</span>
                       </span>
                       <br>

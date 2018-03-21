@@ -39,7 +39,7 @@
       <span class="label">NORMAL</span></p>
       <p class="level-label">Not for beginners, but still for fun. </p>
       <br>
-             <p><span><img class="icon" src="../../static/full_normal.png"/></span>
+             <p><span><img class="icon" src="../../static/full_competitive.png"/></span>
       <span class="label">COMPETITIVE</span></p>
       <p class="level-label">Fast pace game for highly skilled players. </p>
       <br>

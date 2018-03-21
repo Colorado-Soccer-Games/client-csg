@@ -124,30 +124,27 @@
       </div>
       <div id="Saturday">
       <h1>SATURDAY</h1>
-        <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Saturday'">
-        <span>
-        <h2> {{ field.location }} </h2>
-        <br>
-        <h3> {{ field.city }} </h3>
-        <div class="field-deets">
-          <p class="label-data"><span class="label">Time: </span>{{field.time}}</p>
-          <p class="label-data"><span class="label">Level: </span>{{field.level}}</p>
-          <p class="label-data"><span class="label">Field: </span>{{field.surface}}</p>
-          <p class="label-data"><span class="label">Goals: </span>{{field.goals}}</p>
-        </div>
-        <div class="deets">
-          <p class="label-info"><span class="label-field">Parking: </span>{{field.info_parking}}</p>
-          <p class="label-info"><span class="label-field">Restrooms: </span>{{field.info_restrooms}}</p>
-          <p class="label-info"><span class="label-field">Water: </span>{{field.info_water}}</p>
-          <p class="label-info"><span class="label-field">Lights: </span>{{field.info_lights}}</p>
-        </div>
-        <div class="card-buttons">
-          <h4>Total:</h4> <span> </span>
-          <br>
-          <button> Join </button>
-        </div>
-        </span>
-        </div>
+                <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Saturday'">
+              <span>
+                <h2> {{ field.location }} </h2>
+                  <!-- <img class=" float icon" src="@/assets/normal.png"/> -->
+                  <br>
+                <h3> {{ field.city }} </h3>
+                <div class="deets">
+                  <!-- <img class="icon" src="@/assets/dirt.png"/>
+                  <img class="icon" src="@/assets/netless.png"/>
+                  <img class="icon" src="@/assets/night.png"/>
+                  <br>
+                  <img class="icon" src="@/assets/lights.png"/>
+                  <img class="icon" src="@/assets/water.png"/> -->
+                </div>
+                <div class="card-buttons">
+                  <h4>Total:</h4> <span> </span>
+                  <br>
+                  <button> Join </button>
+                </div>
+              </span>
+            </div>
 
       </div>
       <div id="Sunday">
@@ -246,11 +243,11 @@ export default {
   background-color: #dcdada;
   width: 120px;
   border-radius: 1px;
-  border-top: px solid white;
+  border-top: 2px solid white;
   border-bottom: 2px solid white;
   margin-top: 20px;
-  max-height: 194px;
-  min-height: 194px;
+  max-height: 140px;
+  min-height: 140px;
 }
 
 h1 {
@@ -270,7 +267,7 @@ h1 {
 }
 
 h2 {
-  font-size: 11px;
+  font-size: 10px;
   display: inline;
   color: #222222;
   padding-left: 2px;
@@ -281,7 +278,7 @@ h3 {
   /* display: inline; */
   color: #222222;
   padding-left: 2px;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
   margin-top: 10px;
   font-weight: 200;
 }
@@ -302,28 +299,11 @@ h4 {
 }
 .deets {
   /* margin-top:10px; */
-  background-color: #424242;
+  background-color: #222222;
   padding-left: 2px;
-  padding-top:5px;
-
-    padding-bottom:5px;
   border-radius: 1px;
   padding-top: 4px;
-  /* width: 100%; */
-  color: white;
-}
-
-.field-deets {
-  /* margin-top:10px; */
-  border-top: 4px #aaa solid;
-  background-color: white;
-  padding-left: 2px;
-  padding-top:5px;
-    padding-bottom:5px;
-  border-radius: 1px;
-  padding-top: 4px;
-  /* width: 100%; */
-  color: #222;
+  width: 100%;
 }
 
 .card-buttons {
@@ -382,32 +362,4 @@ button:hover {
 #Saturday {
   background-color: #383838;
 }
-.label {
-  font-weight: 400;
-  color:rgb(80, 79, 79);
-}
-
-.label-field {
-  font-size: 12px;
-  padding-left: 2px;
-  color:white;
-      font-weight: 300;
-}
-
-.label-data {
-  font-size: 12px;
-  padding-left: 2px;
-  color:black;
-    font-weight: 100;
-}
-
-.label-info {
-  font-size: 12px;
-  padding-left: 2px;
-  color:#aaa;
-      font-weight: 100;
-}
-
-
-
 </style>

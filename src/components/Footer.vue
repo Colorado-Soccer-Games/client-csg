@@ -4,24 +4,24 @@
   <footer>
     <div id="FooterWrapper">
       <div class="meh">
-         <img class="logo rotate" src="@/assets/green.png">
+         <img class="logo rotate" src="../../static/green.png">
          </div>
          <hr>
 <div id="PreFooter">
 <div class="FooterRow">
-<a href="https://bencasalino.com/" class="FooterLink"><img class="host" src="@/assets/soccer-ball.png"> &nbsp;About Project </a>
-<a href="https://bencasalino.com/"  class="FooterLink"><img class="host" src="@/assets/soccer-shoe.png"> Contribute </a>
-<a href="https://bencasalino.com/"  class="FooterLink"><img class="host" src="@/assets/contact.png">Contact Me</a>
+<a href="https://bencasalino.com/" class="FooterLink"><img class="host" src="../../static/soccer-ball.png"> &nbsp;About Project </a>
+<a href="https://bencasalino.com/"  class="FooterLink"><img class="host" src="../../static/soccer-shoe.png"> Contribute </a>
+<a href="https://bencasalino.com/"  class="FooterLink"><img class="host" src="../../static/contact.png">Contact Me</a>
 </div>
 <div class="FooterRow">
-<a href="https://soccer-directory-colorado.firebaseapp.com/"  class="FooterLink"> <img class="host" src="@/assets/soccer.png"> &nbsp; Resources Directory </a>
-<a href="https://soccer-directory-colorado.firebaseapp.com/"  class="FooterLink"><img class="host" src="@/assets/field.png">Fields Directory </a>
-<a href="https://soccergamescolorado.herokuapp.com/s"  class="FooterLink"><img class="host" src="@/assets/hostwhite.png">Heroku&nbsp;|&nbsp;Firebase</a>
+<a href="https://soccer-directory-colorado.firebaseapp.com/"  class="FooterLink"> <img class="host" src="../../static/soccer.png"> &nbsp; Resources Directory </a>
+<a href="https://soccer-directory-colorado.firebaseapp.com/"  class="FooterLink"><img class="host" src="../../static/field.png">Fields Directory </a>
+<a href="https://soccergamescolorado.herokuapp.com/s"  class="FooterLink"><img class="host" src="../../static/hostwhite.png">Heroku&nbsp;|&nbsp;Firebase</a>
 </div>
 <div class="FooterRow">
-<a href="https://soccergamescolorado.herokuapp.com/" class="FooterLink"><img class="host" src="@/assets/database.png">&nbsp;API&nbsp;|&nbsp;Database</a>
-<a href="https://github.com/bencasalino"  class="FooterLink"><img class="host2" src="@/assets/github-logo.png">Github Repo</a>
-<a href="https://github.com/bencasalino"  class="FooterLink"> <img class="host" src="@/assets/code.png">&nbsp;Technologies</a>
+<a href="https://soccergamescolorado.herokuapp.com/" class="FooterLink"><img class="host" src="../../static/database.png">&nbsp;API&nbsp;|&nbsp;Database</a>
+<a href="https://github.com/bencasalino"  class="FooterLink"><img class="host2" src="../../static/github-logo.png">Github Repo</a>
+<a href="https://github.com/bencasalino"  class="FooterLink"> <img class="host" src="../../static/code.png">&nbsp;Technologies</a>
 </div>
 </div>
         <!-- <img class="logo" src="@/assets/green.png"> -->
