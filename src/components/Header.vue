@@ -3,7 +3,7 @@
      <header>
       <div id="Header--Wrapper__Left">
         <img class="logo rotate animated slideInLeft" src="@/assets/black.png">
-      <h1 class="animated slideInDown">SOCCER GAMES <span class="in">&nbsp; in &nbsp;</span> COLORADO</h1>
+      <h1 class="animated slideInDown">COLORADO SOCCER GAMES</h1>
       </div>
       <div id="Header--Wrapper__Center">
            <!-- <img class="logo" src="@/assets/black.png"> -->
