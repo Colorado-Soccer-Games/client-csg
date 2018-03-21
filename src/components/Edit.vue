@@ -42,19 +42,19 @@
             <br>
             <input type="radio" name="time-selection" checked="checked">
             <span>
-            <img class="time--icon" src="@/assets/morning.png"/>
+            <img class="time--icon" src="../../static/morning.png"/>
             <span>Morning</span>
             </span>
             <br>
             <input type="radio" name="time-selection">
             <span>
-            <img class="time--icon" src="@/assets/day.png"/>
+                    <img class="time--icon" src="../../static/day.png"/>
             <span>Day</span>
             </span>
             <br>
                   <input type="radio" name="time-selection">
                     <span>
-                      <img class="time--icon" src="@/assets/night.png"/>
+                    <img class="time--icon" src="../../static/night.png"/>
                     <span>Night</span>
                       </span>
             <br>
@@ -63,19 +63,19 @@
                 <br>
                       <input type="radio" name="difficulty-selection" checked="checked">
                       <span>
-                      <img class="time--icon" src="@/assets/open.png"/>
+                           <img class="time--icon" src="../../static/open.png"/>
                       <span>Easy/Open</span>
                       </span>
                       <br>
                       <input type="radio" name="difficulty-selection">
                       <span>
-                      <img class="time--icon" src="@/assets/normal.png"/>
+                         <img class="time--icon" src="../../static/normal.png"/>
                       <span>Normal</span>
                       </span>
                       <br>
                       <input type="radio" name="difficulty-selection">
                       <span>
-                      <img class="time--icon" src="@/assets/competitive.png"/>
+                          <img class="time--icon" src="../../static/competitive.png"/>
                       <span>Competitive</span>
                       </span>
                       <br>

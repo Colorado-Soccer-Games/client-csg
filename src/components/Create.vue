@@ -33,19 +33,19 @@
             <br>
             <input v-model="TimeSelection" type="radio" name="time-selection" checked="checked">
             <span>
-            <img class="time--icon" src="@/assets/morning.png"/>
+            <img class="time--icon" src="../../static/morning.png"/>
             <span>Morning</span>
             </span>
             <br>
             <input v-model="TimeSelection" type="radio" name="time-selection">
             <span>
-            <img class="time--icon" src="@/assets/day.png"/>
+           <img class="time--icon" src="../../static/day.png"/>
             <span>Day</span>
             </span>
             <br>
                   <input v-model="TimeSelection" type="radio" name="time-selection">
                     <span>
-                      <img class="time--icon" src="@/assets/night.png"/>
+                    <img class="time--icon" src="../../static/night.png"/>
                       <span>Night</span>
                       </span>
                       <br>
@@ -54,19 +54,19 @@
                       <br>
                       <input type="radio" name="difficulty-selection" checked="checked">
                       <span>
-                      <img class="time--icon" src="@/assets/open.png"/>
+                                 <img class="time--icon" src="../../static/open.png"/>
                       <span>Open</span>
                       </span>
                       <br>
                       <input type="radio" name="difficulty-selection">
                       <span>
-                      <img class="time--icon" src="@/assets/normal.png"/>
+                                 <img class="time--icon" src="../../static/normal.png"/>
                       <span>Normal</span>
                       </span>
                       <br>
                       <input type="radio" name="difficulty-selection">
                       <span>
-                      <img class="time--icon" src="@/assets/competitive.png"/>
+                              <img class="time--icon" src="../../static/competitive.png"/>
                       <span>Competitive</span>
                       </span>
                       <br>
@@ -104,19 +104,19 @@
                       <br>
                       <input v-model="GoalSelection" type="radio" name="goal-selection" checked="checked">
                       <span>
-                      <img class="time--icon" src="@/assets/full.png"/>
+                      <img class="time--icon" src="../../static/full.png"/>
                       <span>Full</span>
                       </span>
                       <br>
                       <input v-model="GoalSelection" type="radio" name="goal-selection">
                       <span>
-                      <img class="time--icon" src="@/assets/netless.png"/>
+                      <img class="time--icon" src="../../static/netless.png"/>
                       <span>Netless</span>
                       </span>
                       <br>
                       <input v-model="GoalSelection" type="radio" name="goal-selection">
                       <span>
-                      <img class="time--icon" src="@/assets/none.png"/>
+                      <img class="time--icon" src="../../static/none.png"/>
                       <span>None</span>
                       </span>
                     <br>
@@ -125,25 +125,25 @@
                       <br>
                       <input v-model="FieldType" type="radio" name="field-type" checked="checked">
                       <span>
-                      <img class="time--icon" src="@/assets/grass.png"/>
+                        <img class="time--icon" src="../../static/grass.png"/>
                       <span>Grass</span>
                       </span>
                       <br>
                       <input v-model="FieldType" type="radio" name="field-type">
                       <span>
-                      <img class="time--icon" src="@/assets/turf.png"/>
+                        <img class="time--icon" src="../../static/turf.png"/>
                       <span>Turf</span>
                       </span>
                       <br>
                       <input v-model="FieldType" type="radio" name="field-type">
                       <span>
-                      <img class="time--icon" src="@/assets/dirt.png"/>
+                        <img class="time--icon" src="../../static/dirt.png"/>
                       <span>Dirt</span>
                       </span>
                       <br>
                       <input v-model="FieldType" type="radio" name="field-type">
                       <span>
-                      <img class="time--icon" src="@/assets/concrete.png"/>
+                        <img class="time--icon" src="../../static/concrete.png"/>
                       <span>Concrete</span>
                       </span>
                       <br>

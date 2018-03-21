@@ -207,16 +207,18 @@ export default {
       // each key in a  a game
       allKeys.forEach(key => {
         console.log(key)
-        switch (this.data.games[0].key) {
+             console.log(this.data.games[0][key])
+        switch (this.data.games[0][key]) {
+
+          // TIME
           case 'Morning':
-            allIcons.push('<img class="float icon" src="@/assets/morning.png"/>'
-            )
+            allIcons.push('<img class="float icon" src="../../static/morning.png"/>')
           // eslint-disable-next-line
           case 'Day':
-            allIcons.push('<img class="float icon" src="@/assets/day.png"/>')
+            allIcons.push('<img class="float icon" src="../../static/day.png"/>')
           // eslint-disable-next-line
           case 'Night':
-            allIcons.push('<img class="float icon" src="@/assets/night.png"/>')
+            allIcons.push('<img class="float icon" src="../../static/night.png"/>')
         }
       })
       console.log(allIcons)

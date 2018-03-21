@@ -2,7 +2,7 @@
   <div id="HeaderWrapper">
      <header>
       <div id="Header--Wrapper__Left">
-        <img class="logo rotate animated slideInLeft" src="@/assets/black.png">
+        <img class="logo rotate animated slideInLeft" src="../../static/black.png">
       <h1 class="animated slideInDown">COLORADO SOCCER GAMES</h1>
       </div>
       <div id="Header--Wrapper__Center">

@@ -2,7 +2,7 @@
 <div class="wrap">
   <div id="weekly">
     <div class="another">
-       <img class="this" src="@/assets/bleh.png"/>
+       <img class="this" src="../../static/bleh.png"/>
            <h1>WEEKLY VIEW </h1>
     </div>
     <!-- <p>info about legentd? </p>
@@ -31,15 +31,15 @@
 <div id=Level-Wrapper>
 
   <div class="inner-legend">
-       <p><span><img class="icon" src="@/assets/open.png"/></span>
+       <p><span><img class="icon" src="../../static/full_open.png"/></span>
       <span class="label">OPEN/CO-ED</span></p>
       <p class="level-label">Game is open to all skill levels. </p>
       <br>
-             <p><span><img class="icon" src="@/assets/normal.png"/></span>
+             <p><span><img class="icon" src="../../static/full_normal.png"/></span>
       <span class="label">NORMAL</span></p>
       <p class="level-label">Not for beginners, but still for fun. </p>
       <br>
-             <p><span><img class="icon" src="@/assets/competitive.png"/></span>
+             <p><span><img class="icon" src="../../static/full_normal.png"/></span>
       <span class="label">COMPETITIVE</span></p>
       <p class="level-label">Fast pace game for highly skilled players. </p>
       <br>
@@ -47,15 +47,15 @@
 </div>
 <div id=Field-Wrapper>
   <div class="inner-field">
-       <p><span><img class="icon" src="@/assets/full.png"/></span>
+       <p><span><img class="icon" src="../../static/full_full.png"/></span>
       <span class="label">GOALS <span class="amp">&amp;</span> NETS</span></p>
       <p class="level-label">Field is eqiped with regulation goals. </p>
       <br>
-             <p><span><img class="icon" src="@/assets/netless.png"/></span>
+             <p><span><img class="icon" src="../../static/full_netless.png"/></span>
       <span class="label">GOAL POSTS ONLY</span></p>
       <p class="level-label">Field has goals but no nets. </p>
       <br>
-             <p><span><img class="icon" src="@/assets/none.png"/></span>
+             <p><span><img class="icon" src="../../static/full_none.png"/></span>
       <span class="label">NO GOALS</span></p>
       <p class="level-label">Field has no goals or marking lines. </p>
       <br>
@@ -80,32 +80,32 @@
 </div> -->
 <div id=Surface-Wrapper>
   <div class="inner-surface">
-       <p><span><img class="icon" src="@/assets/grass.png"/></span>
+       <p><span><img class="icon" src="../../static/full_grass.png"/></span>
       <span class="level-label"> Cleats &nbsp;/&nbsp; Studs </span></p>
       <br>
-             <p><span><img class="icon" src="@/assets/dirt.png"/></span>
+             <p><span><img class="icon" src="../../static/full_dirt.png"/></span>
       <span class="level-label"> Cleats &nbsp;/&nbsp; Studs </span></p>
       <br>
-             <p><span><img class="icon" src="@/assets/turf.png"/></span>
+             <p><span><img class="icon" src="../../static/full_turf.png"/></span>
       <span class="level-label">Hard Ground</span></p>
       <br>
-             <p><span><img class="icon" src="@/assets/concrete.png"/></span>
+             <p><span><img class="icon" src="../../static/full_concrete.png"/></span>
       <span class="level-label"> Futsal &nbsp;/&nbsp; Running </span></p>
       <br>
   </div>
 </div>
 <div id=Info-Wrapper>
   <div class="inner-info">
-       <p><span><img class="icon" src="@/assets/parking.png"/></span>
+       <p><span><img class="icon" src="../../static/full_parking.png"/></span>
       <span class="level-label">Free Parking available. </span></p>
       <br>
-             <p><span><img class="icon" src="@/assets/lights.png"/></span>
+             <p><span><img class="icon" src="../../static/full_lights.png"/></span>
       <span class="level-label">Lights/nightly game eligble. </span></p>
       <br>
-             <p><span><img class="icon" src="@/assets/restrooms.png"/></span>
+             <p><span><img class="icon" src="../../static/full_restrooms.png"/></span>
       <span class="level-label">Open restrooms at field. </span></p>
       <br>
-             <p><span><img class="icon" src="@/assets/water.png"/></span>
+             <p><span><img class="icon" src="../../static/full_water.png"/></span>
       <span class="level-label">Drinking fountains available.</span></p>
       <br>
   </div>

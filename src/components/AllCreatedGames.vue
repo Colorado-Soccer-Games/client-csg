@@ -10,7 +10,7 @@
     <div class="row">
       <div v-bind:key="field.games" v-for="field in data.games" class="FullGameInfoCard">
        <div class="inline-column id">
-        <img class="icon" src="@/assets/open.png"/>
+          <img class="icon" src="../../static/greenflag.png"/>
         <p class="game-id">ID: {{ field.id }}</p>
         <!-- <p>{{ field.level }}</p> -->
        </div>
@@ -19,25 +19,19 @@
         <p class="city">{{ field.city }}</p>
        </div>
        <div class="date">
-        <p class="day"> <span><img class="icon" src="@/assets/night.png"/> </span> {{ field.day }}</p>
+        <p class="day"> <span></span> {{ field.day }}</p>
             <!-- <p class="time">{{ field.time }}</p> -->
        </div>
-       <div class="surface">
+       <!-- <div class="surface">
          <img class="icon" src="@/assets/dirt.png"/>
          <img class="icon" src="@/assets/netless.png"/>
-        <!-- <p>{{ field.surface }}</p> -->
-        <!-- <p>{{ field.goals }}</p> -->
-       </div>
-       <div class="field">
+       </div> -->
+       <!-- <div class="field">
         <img class="icon" src="@/assets/lights.png"/>
         <img class="icon" src="@/assets/parking.png"/>
         <img class="icon" src="@/assets/water.png"/>
         <img class="icon" src="@/assets/restrooms.png"/>
-        <!-- <p> {{ field.info_parking }}</p> -->
-        <!-- <p>{{ field.info_restrooms }}</p> -->
-        <!-- <p>{{ field.info_water }}</p> -->
-        <!-- <p>{{ field.info_lights }}</p> -->
-       </div>
+       </div> -->
        <div class="inline-column inset stats">
         <p class="players"><span class="bold">Total Players: </span>{{ field.stats_total_players }}</p>
         <p class="completed"><span class="bold">Total Games: </span>{{ field.stats_games_completed }}</p>
