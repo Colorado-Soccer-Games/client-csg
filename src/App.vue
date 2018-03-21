@@ -17,8 +17,6 @@
   <Edit/>
   <AllCreatedGames/>
 </div>
-  <!-- Router disabled  -->
-  <!-- <router-view></router-view> -->
   <Footer/>
   </div>
 </template>

@@ -18,10 +18,10 @@ export default {
         console.log('games', this.games)
       })
       .then(() => {
-        this.renderChart({ labels: ['Total Fields'],
+        this.renderChart({ labels: ['TOTAL SCHEDULED GAMES'],
           datasets: [
             {
-              label: 'Indoor',
+              label: 'tester',
               backgroundColor: '#2efd96',
               data: [this.games, 0] }] },
         {

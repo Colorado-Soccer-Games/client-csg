@@ -73,7 +73,7 @@
                     </div>
                     <div>
                 <div class="right">
-                     <h3>Field Details: </h3>
+                  <h3>Field Details: </h3>
                       <br>
                       <input v-model="FieldInfo" type="checkbox" name="field_info">
                       <span>
@@ -171,12 +171,11 @@ export default {
       CreatedGame: {
         location: '',
         city: '',
-        FieldInfo: [],
-        DaySelection: [],
-        TimeSelction: [],
-        FieldType: [],
-        GoalSelection: [],
-
+        // FieldInfo: [],
+        // DaySelection: [],
+        // TimeSelction: [],
+        // FieldType: [],
+        // GoalSelection: []
       }
     }
   },
