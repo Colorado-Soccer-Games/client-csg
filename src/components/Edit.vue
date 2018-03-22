@@ -176,18 +176,18 @@
       </div>
       <div id="stats">
         <h4>CURRENT STATS</h4>
-          <Chart/>
+          <ChartTwo/>
       </div>
   </div>
 </template>
 
 <script>
-import Chart from '@/components/Chart'
+import ChartTwo from '@/components/ChartTwo'
 
 export default {
   name: 'Edit',
   components: {
-    Chart
+    ChartTwo
   }
 }
 </script>

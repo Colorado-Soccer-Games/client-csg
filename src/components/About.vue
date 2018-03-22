@@ -277,7 +277,7 @@ p {
   font-weight: 900;
   color: #222;
   padding-bottom: 14px;
-  border-bottom: 2px #222 solid;
+  border-bottom: 3px #474143 solid;
 }
 
 .text-deets {

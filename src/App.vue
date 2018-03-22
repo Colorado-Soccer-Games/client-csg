@@ -2,7 +2,7 @@
   <div id="EntireApplicationWrapper">
     <Header/>
     <div class="Wrapper">
-    <Stats/>
+    <About/>
     <Create/>
     </div>
     <LegendText/>
@@ -26,7 +26,7 @@
 // Components
 import Header from '@/components/Header'
 import Create from '@/components/Create'
-import Stats from '@/components/Stats'
+import About from '@/components/About'
 import LegendText from '@/components/LegendText'
 import Week from '@/components/Week'
 import Map from '@/components/Map'
@@ -48,7 +48,7 @@ export default {
   components: {
     Header,
     Create,
-    Stats,
+    About,
     LegendText,
     Map,
     MapFields,

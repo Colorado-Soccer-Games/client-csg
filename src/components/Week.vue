@@ -246,31 +246,6 @@ export default {
           // console.log(data);
         })
     }
-  },
-  computed: {
-    iconSwitcher () {
-      var allIcons = []
-      var allKeys = Object.keys(this.data.games[0])
-      // each key in a  a game
-      allKeys.forEach(key => {
-        console.log(key)
-             console.log(this.data.games[0][key])
-        switch (this.data.games[0][key]) {
-
-          // TIME
-          case 'Morning':
-            allIcons.push('<img class="float icon" src="../../static/morning.png"/>')
-          // eslint-disable-next-line
-          case 'Day':
-            allIcons.push('<img class="float icon" src="../../static/day.png"/>')
-          // eslint-disable-next-line
-          case 'Night':
-            allIcons.push('<img class="float icon" src="../../static/night.png"/>')
-        }
-      })
-      console.log(allIcons)
-      return allIcons.join()
-    }
   }
 }
 </script>
@@ -386,7 +361,6 @@ flex-direction: column; */
   padding-top: 4px;
   /* width: 100%; */
   color: #222;
-
 }
 
 .card-buttons {
@@ -483,6 +457,4 @@ button:hover {
   min-width: 10px;
   max-width: 10px;
 }
-
-
 </style>

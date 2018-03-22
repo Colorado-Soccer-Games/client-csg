@@ -170,7 +170,7 @@ export default {
       baseURL: 'http://localhost:3000/games',
       CreatedGame: {
         location: '',
-        city: '',
+        city: ''
         // FieldInfo: [],
         // DaySelection: [],
         // TimeSelction: [],
