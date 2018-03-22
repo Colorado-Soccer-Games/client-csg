@@ -301,7 +301,6 @@ input {
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.55),
     0 0 40px rgba(0, 0, 0, 0.55) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.55), 0 0 40px rgba(0, 0, 0, 0.55) inset;
-
   font-size: 18px;
   font-family: "Lato", sans-serif;
   font-weight: 700;

@@ -12,16 +12,36 @@
 <div class="wrapperz">
 <div class="left">
 <div class="about-text">
-  <p>SCG is a web application for the people of Colorado to help orgainize & track statistical data for all active pick-up soccer games across the state.
+  <p><img class="aboutlogo" src="/../../static/green.png">CSG is a web application for the people of Colorado to help orgainize & track statistical data for all active pick-up soccer games across the state.
     <br>
-        <br>
-    A web application for creating/scheduling pickup soccer games in and around Colorado. Features include “RSVP” to games functionality while displaying trending past game statistics.
   </p>
+
+</div>
+<div twilio-form>
+<form>
+  <p class="text-title"><img class="phone" src="../../static/phone.png" alt=""> SET UPDATES/REMINDERS FOR GAMES<p>
+  <p class="text-deets"> To recieve text updates and notifications about games via SMS enter the game name and your phone number to begin.<p>
+    <br>
+    <div clas="imarow">
+  <p class="text-label">GAME NAME:</p>
+  <input type="text" name="location" maxlength="25">
+      <br>
+            <br>
+      </div>
+            <div clas="imarow">
+  <p class="text-label">PHONE NUMBER:</p>
+  <input type="number" name="location" maxlength="25">
+  </div>
+  <br>
+              <input class='form--button'
+            type='submit'
+            value='GET UPDATES'>
+</form>
 </div>
 </div>
 <div class="right">
 <h1>VIEW GAME DATA</h1>
-<p>SCG is a web application for the people of Colorado to help.</p>
+<p>aksjdklasjdklsjad</p>
 <br>
 <h1>GET FEILD INFO</h1>
 <p>aksjdklasjdklsjad</p>
@@ -35,38 +55,6 @@
 <h4> CREATE/HOST A GAME</h4>
 </div>
 </div>
-<!-- <div class="check-wrap">
-  <img class="icon" src="@/assets/check.png"/>
-    <div class="wrapping">
-       <h1>GET FIELD INFO</h1>
-       <br>
-        <h2> Know the details about the field before you even go.</h2>
-    </div>
-</div>
-<div class="check-wrap">
-  <img class="icon" src="@/assets/check.png"/>
-    <div class="wrapping">
-       <h1>RSVP/JOIN <span class="sm"> A </span> GAME</h1>
-       <br>
-        <h2>Use the weekly view below to join a game and see the numbers.</h2>
-    </div>
-</div>
-<div class="check-wrap">
-  <img class="icon" src="@/assets/check.png"/>
-      <div class="wrapping">
-       <h1>GET TEXT/SMS UPDATES</h1>
-       <br>
-        <h2>Set reminders or get updates on specific games to stay up to date.  </h2>
-    </div>
-</div>
-<div class="check-wrap">
-  <img class="icon" src="@/assets/black.png"/>
-      <div class="wrapping">
-       <h1>CREATE/HOST <span class="sm"> A </span> GAME</h1>
-       <br>
-        <h2>No games near you? Host a game by completing the form to the left. </h2>
-    </div>
-</div> -->
 </div>
 </template>
 
@@ -258,6 +246,7 @@ font-size: 18px;
   margin-bottom: 1rem;
 }
 .wrapperz {
+  margin-top: 1rem;
   display: flex;
   /* flex-flow: row; */
   justify-content: space-between;
@@ -281,6 +270,87 @@ p {
   font-size: 12px;
   color: #aaa;
   z-index: 99999;
+}
 
+.text-title {
+  font-size: 13px;
+  font-weight: 900;
+  color: #222;
+  padding-bottom: 14px;
+  border-bottom: 2px #222 solid;
+}
+
+.text-deets {
+  font-size: 12px;
+  font-weight: 400;
+  color: #222;
+}
+
+.aboutlogo {
+  max-height: 10px;
+}
+.text-label {
+  font-size: 12px;
+    font-weight: 600;
+    color: #222;
+    display: inline;
+    /* padding-left: -5px; */
+}
+
+input[type="text"] {
+  /* background-color: #222222; */
+  background: transparent;
+  color: #222;
+  /* margin: 8px 0; */
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px #222 solid;
+  font-weight: 500;
+  width: 65%;
+}
+input[type="number"] {
+  /* background-color: #222222; */
+  background: transparent;
+  color: #222;
+  /* margin: 8px 0; */
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px #222 solid;
+  font-weight: 500;
+    width: 57%;
+}
+
+.phone {
+height:20px;
+}
+
+.form--button {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  background-color: #222;
+  color: #2EFD96;
+  margin-top: 10px;
+  /* border-radius: 4px; */
+  /* margin: 1rem 0 0 0; */
+  /* border: 4px #2EFD96 solid; */
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33),
+    0 0 40px rgba(0, 0, 0, 0.33) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33),
+    0 0 40px rgba(0, 0, 0, 0.33) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33) inset;
+}
+.form--button:hover {
+  cursor: pointer;
+  background-color:#aaa;
+  color: #222;
+  /* border-top: 2px #2efd96 solid; */
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 </style>
