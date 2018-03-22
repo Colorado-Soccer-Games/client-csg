@@ -27,6 +27,10 @@
 import Header from '@/components/Header'
 import Create from '@/components/Create'
 import About from '@/components/About'
+import Project from '@/components/Project'
+import StatsOne from '@/components/StatsOne'
+import StatsTwo from '@/components/StatsTwo'
+import StatsThree from '@/components/StatsThree'
 import LegendText from '@/components/LegendText'
 import Week from '@/components/Week'
 import Map from '@/components/Map'
@@ -49,6 +53,10 @@ export default {
     Header,
     Create,
     About,
+    Project,
+    StatsOne,
+    StatsTwo,
+    StatsThree,
     LegendText,
     Map,
     MapFields,
@@ -100,7 +108,6 @@ line-height: 1;
 /* default font fallback */
 /* font-family: 'Roboto Slab', serif; */
 font-family: 'Lato', sans-serif;
-/* background-color:#005bea; */
   background-color: #222222;
 color:white;
 }
