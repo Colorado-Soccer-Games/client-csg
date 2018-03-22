@@ -2,7 +2,7 @@
   <div id="Wrapper">
     <span id="allgames"></span>
     <div>
-      <h1>All Created Games</h1>
+      <h1>ALL CREATED GAMES</h1>
         <a href="javascript:history.go(0)">
           <button>REFRESH GAME LIST</button>
         </a>
@@ -12,26 +12,14 @@
        <div class="inline-column id">
           <img class="icon" src="../../static/greenflag.png"/>
         <p class="game-id">ID: {{ field.id }}</p>
-        <!-- <p>{{ field.level }}</p> -->
        </div>
-       <div class="inline-column inset place">
+       <div class="inset place">
         <p class="location"> {{ field.location }}</p>
-        <p class="city">{{ field.city }}</p>
+       <span> <p class="city">&nbsp;|&nbsp;{{ field.city }}</p> </span>
        </div>
        <div class="date">
         <p class="day"> <span></span> {{ field.day }}</p>
-            <!-- <p class="time">{{ field.time }}</p> -->
        </div>
-       <!-- <div class="surface">
-         <img class="icon" src="@/assets/dirt.png"/>
-         <img class="icon" src="@/assets/netless.png"/>
-       </div> -->
-       <!-- <div class="field">
-        <img class="icon" src="@/assets/lights.png"/>
-        <img class="icon" src="@/assets/parking.png"/>
-        <img class="icon" src="@/assets/water.png"/>
-        <img class="icon" src="@/assets/restrooms.png"/>
-       </div> -->
        <div class="inline-column inset stats">
         <p class="players"><span class="bold">Total Players: </span>{{ field.stats_total_players }}</p>
         <p class="completed"><span class="bold">Total Games: </span>{{ field.stats_games_completed }}</p>
@@ -90,7 +78,6 @@ h1 {
 .inline-column {
   display: flex;
   flex-direction: column;
-
 }
 
 .inset {
@@ -108,11 +95,13 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55) inset
 .place {
   border-top: 2px #dcdada solid;
   border-right: 4px rgb(158, 158, 158) solid;
+  padding: 2px 0 10px 3px;
   font-size: 14px;
-  max-width: 200px;
-  min-width: 200px;
+  max-width: 250px;
+  min-width: 250px;
   background-color: #aaa;
   border-bottom-left-radius: 10px;
+  display: flex;
 }
 
 .location {
@@ -122,7 +111,7 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55) inset
 }
 
 .city {
-  padding: 2px 0 10px 3px;
+  padding: 4px 0 10px 3px;
   color: black;
   font-weight: 900;
 }
@@ -235,6 +224,10 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55), 0 0 40px rgba(0, 0, 0, 0.55) inset;
 }
 .bold {
   font-weight: 900;
+}
 
+.row {
+  /* display: flex;
+  flex-direction: row; */
 }
 </style>

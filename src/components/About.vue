@@ -17,7 +17,7 @@
   </p>
 
 </div>
-<div twilio-form>
+<div class="twilio-form">
 <form>
   <p class="text-title"><img class="phone" src="../../static/phone.png" alt=""> SET UPDATES/REMINDERS FOR GAMES<p>
   <p class="text-deets"> To recieve text updates and notifications about games via SMS enter the game name and your phone number to begin.<p>
@@ -33,7 +33,7 @@
   <input type="number" name="location" maxlength="25">
   </div>
   <br>
-              <input class='form--button'
+     <input class='form--button'
             type='submit'
             value='GET UPDATES'>
 </form>
@@ -41,18 +41,22 @@
 </div>
 <div class="right">
 <h1>VIEW GAME DATA</h1>
-<p>aksjdklasjdklsjad</p>
+<p class="desc">All past games have data associated to help players make the most informed decisions. </p>
+<br>
 <br>
 <h1>GET FEILD INFO</h1>
-<p>aksjdklasjdklsjad</p>
+<p class="desc">Before joining a game, check out the field information to see what is available.</p>
+<br>
 <br>
 <h1>JOIN A GAME</h1>
-<p>aksjdklasjdklsjad</p>
+<p class="desc">To attend a game simply click the join button from the associated game below.</p>
+<br>
 <br>
 <h1>SET TEXT UPDATES</h1>
-<p>aksjdklasjdklsjad</p>
+<p class="desc">Enter a phone number for games to receive SMS reminders/cancellations.</p>
 <br>
-<h4> CREATE/HOST A GAME</h4>
+<h6> CREATE/HOST A GAME <img class="arrow" src="../../static/arrow.png" alt=""></h6>
+<p class="desc">Don't see a game in your vicinity? Use the form on the left to create one!</p>
 </div>
 </div>
 </div>
@@ -108,9 +112,24 @@ h4 {
 }
 h5 {
   color: #23BF71;
+      max-width: 200px;
+    font-size: .9rem;
 }
 h6 {
-  color: #FFFFFF;
+  color: white;
+      /* padding-left: 10px;
+      padding-bottom: 20px;
+            padding-top: 10px; */
+                background-color: #474143;
+      font-size: 1.2rem;
+      padding:5px 0 9px 5px;
+      /* border-top: 4px #aaa solid; */
+  font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        max-width: 230px;
+                       border-top-right-radius: 2px;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 2px;
 }
 
 .new1 {
@@ -256,7 +275,7 @@ font-size: 18px;
 background-color: #2EFD96;
 min-width: 33%;
 color:#222;
-padding: 1rem 1rem 1rem 1rem;
+padding: 2rem 2rem 1rem 2rem;
 /* padding-right: 35px; */
 /* min-height: 200px; */
 }
@@ -270,6 +289,11 @@ p {
   font-size: 12px;
   color: #aaa;
   z-index: 99999;
+}
+
+.desc {
+  margin-top:5px;
+  margin-left: 5px;
 }
 
 .text-title {
@@ -352,5 +376,10 @@ height:20px;
   font-size: 18px;
   font-family: "Lato", sans-serif;
   font-weight: 700;
+}
+
+.arrow {
+padding-top:2px;
+ height:14px;
 }
 </style>

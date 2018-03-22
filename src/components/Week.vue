@@ -170,14 +170,14 @@
           <p class="label-data"><span class="label">Goals: </span>{{field.goals}}</p>
         </div>
         <div class="deets">
-          <div class="split-left">
-          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_parking}}</p>
-          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_parking}}</p>
-          </div >
-          <div class="split-right">
-          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
-          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
-          </div>
+            <div class="split-left">
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_parking}}</p>
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_parking}}</p>
+            </div >
+            <div class="split-right">
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+            </div>
         </div>
         <div class="card-buttons">
           <h4>Total:</h4> <span> </span>
@@ -203,12 +203,12 @@
         </div>
         <div class="deets">
           <div class="split-left">
-          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_parking}}</p>
-          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_parking}}</p>
+              <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_parking}}</p>
+              <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_parking}}</p>
           </div >
           <div class="split-right">
-          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
-          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+              <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+              <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
           </div>
         </div>
         <div class="card-buttons">

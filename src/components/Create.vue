@@ -75,25 +75,25 @@
                 <div class="right">
                   <h3>Field Details: </h3>
                       <br>
-                      <input v-model="FieldInfo" type="checkbox" name="field_info">
+                      <input v-model="FieldInfo" type="checkbox" name="field_restrooms">
                       <span>
                       <img class="time--icon" src="@/assets/restrooms.png"/>
                       <span>Restrooms</span>
                       </span>
                       <br>
-                      <input v-model="FieldInfo" type="checkbox" name="field_info">
+                      <input v-model="FieldInfo" type="checkbox" name="field_water">
                       <span>
                       <img class="time--icon" src="@/assets/water.png"/>
                       <span>Water</span>
                       </span>
                       <br>
-                      <input v-model="FieldInfo" type="checkbox" name="field_info">
+                      <input v-model="FieldInfo" type="checkbox" name="field_lights">
                       <span>
                       <img class="time--icon" src="@/assets/lights.png"/>
                       <span>Lights</span>
                       </span>
                       <br>
-                      <input v-model="FieldInfo" type="checkbox" name="field_info">
+                      <input v-model="FieldInfo" type="checkbox" name="field_parking">
                       <span>
                       <img class="time--icon" src="@/assets/parking.png"/>
                       <span>Parking</span>
