@@ -13,6 +13,7 @@
   "dependencies": {
     "chart.js": "^2.7.2",
     "vue": "^2.5.2",
+    "vue-chart-js": "^1.4.1",
     "vue-chartjs": "^3.2.1",
     "vue-router": "^3.0.1",
     "vue2-google-maps": "^0.8.11"

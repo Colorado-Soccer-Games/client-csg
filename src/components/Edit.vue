@@ -63,13 +63,13 @@
                 <br>
                       <input type="radio" name="difficulty-selection" checked="checked">
                       <span>
-                           <img class="time--icon" src="../../static/open.png"/>
+                      <img class="time--icon" src="../../static/open.png"/>
                       <span>Easy/Open</span>
                       </span>
                       <br>
                       <input type="radio" name="difficulty-selection">
                       <span>
-                         <img class="time--icon" src="../../static/normal.png"/>
+                      <img class="time--icon" src="../../static/normal.png"/>
                       <span>Normal</span>
                       </span>
                       <br>
@@ -82,7 +82,7 @@
           </div>
           <div>
                 <div class="right">
-                     <h3>Field Details: </h3>
+                    <h3>Field Details: </h3>
                       <br>
                       <input type="checkbox" name="field-type">
                       <span>
