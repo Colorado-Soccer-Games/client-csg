@@ -1,0 +1,24 @@
+import { Bar } from 'vue-chartjs'
+export default {
+  extends: Bar,
+  data () {
+    return { games: [] }
+  },
+  mounted () {
+    const baseURL = 'http://localhost:3000/'
+    fetch(baseURL, {
+      method: 'GET'
+    })
+      .then(res => res.json())
+      // eslint-disable-next-line
+      .catch(error => console.error("Error:", error))
+      // eslint-disable-next-line
+      .then(response => {
+        this.games = response.games.length
+        console.log('games', this.games)
+      })
+      .then(() => {
+        this.renderChart({ labels: ['TOTAL SCHEDULED GAMES'], datasets: [{ label: 'tester', backgroundColor: '#FF6444', data: [this.games, 0] }] }, { responsive: HTMLOptGroupElement, maintainAspectRatio: false })
+      })
+  }
+}

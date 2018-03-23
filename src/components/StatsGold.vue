@@ -1,25 +1,25 @@
 <template>
-  <div class="StatsTwo wow animated slideInLeft">
-    <div class="wrap">
-      <h1 class="animated wow slideInUp">MOST POPULAR FIELDS/PARKS</h1>
-    </div>
-      <ChartTwo/>
+  <div class="StatsThree  wow animated slideInLeft">
+        <div class="wrap">
+      <h1 class="animated wow slideInUp">MOST ACTIVE GAMES</h1>
+      </div>
+      <StatsGoldMostPopularField/>
   </div>
 </template>
 
 <script>
-import ChartTwo from '@/components/ChartTwo'
+import StatsGoldMostPopularField from '@/components/StatsGoldMostPopularField'
 
 export default {
-  name: 'StatsTwo',
+  name: 'StatsGold',
   components: {
-    ChartTwo
+    StatsGoldMostPopularField
   }
 }
 </script>
 
 <style scoped>
-.StatsTwo{
+.StatsThree{
   padding-left: 1rem;
 }
 
@@ -31,7 +31,7 @@ export default {
 h1 {
 font-size: 1.5rem;
 padding: 10px;
-background-color:#00ADA9;
+background-color:#FFC636;
 border-top: 3px #aaa solid;
 max-width: 400px;
 color: #222;

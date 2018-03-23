@@ -5,15 +5,15 @@
           <button class="about"> ABOUT THE PROJECT </button>
           </router-link>
 
-          <router-link :to="{name: 'StatsOne'}">
+          <router-link :to="{name: 'NewChart'}">
           <button class="stats1"> MOST GAMES PER DAYS</button>
           </router-link>
 
-          <router-link :to="{name: 'StatsTwo'}">
+          <router-link :to="{name: 'StatsGold'}">
           <button class="stats2">MOST POPULAR FIELDS</button>
           </router-link>
 
-          <router-link :to="{name: 'StatsThree'}">
+          <router-link :to="{name: 'StatsRed'}">
           <button class="stats3">MOST ACTIVE GAMES</button>
           </router-link>
 
@@ -26,12 +26,12 @@
 </template>
 
 <script>
-import Chart from '@/components/Chart'
+// import Chart from '@/components/Chart'
 
 export default {
   name: 'About',
   components: {
-    Chart
+    // Chart
   }
 }
 </script>

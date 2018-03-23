@@ -52,7 +52,7 @@ padding-right: 20px;
 display: flex;
 justify-content: center;
 align-items: flex-end;
-height: 500px;
+height: 200px;
 position: sticky;
 color: #222222;
 font-size: 20px;

@@ -175,19 +175,19 @@
         </form>
       </div>
       <div id="stats">
-        <h4>CURRENT STATS</h4>
-          <ChartTwo/>
+        <!-- <h4>CURRENT STATS</h4> -->
+          <NewChart/>
       </div>
   </div>
 </template>
 
 <script>
-import ChartTwo from '@/components/ChartTwo'
+import NewChart from '@/components/NewChart'
 
 export default {
   name: 'Edit',
   components: {
-    ChartTwo
+    NewChart
   }
 }
 </script>

@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Project from '@/components/Project'
-import StatsOne from '@/components/StatsOne'
-import StatsTwo from '@/components/StatsTwo'
-import StatsThree from '@/components/StatsThree'
+import NewChart from '@/components/NewChart'
+import StatsGold from '@/components/StatsGold'
+import StatsRed from '@/components/StatsRed'
 
 Vue.use(Router)
 
@@ -15,19 +15,19 @@ export default new Router({
       component: Project
     },
     {
-      path: '/StatsOne',
-      name: 'StatsOne',
-      component: StatsOne
+      path: '/NewChart',
+      name: 'NewChart',
+      component: NewChart
     },
     {
-      path: '/StatsTwo',
-      name: 'StatsTwo',
-      component: StatsTwo
+      path: '/StatsGold',
+      name: 'StatsGold',
+      component: StatsGold
     },
     {
-      path: '/StatsThree',
-      name: 'StatsThree',
-      component: StatsThree
+      path: '/StatsRed',
+      name: 'StatsRed',
+      component: StatsRed
     }
   ]
 })

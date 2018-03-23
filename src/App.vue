@@ -28,9 +28,9 @@ import Header from '@/components/Header'
 import Create from '@/components/Create'
 import About from '@/components/About'
 import Project from '@/components/Project'
-import StatsOne from '@/components/StatsOne'
-import StatsTwo from '@/components/StatsTwo'
-import StatsThree from '@/components/StatsThree'
+import NewChart from '@/components/NewChart'
+import StatsGold from '@/components/StatsGold'
+import StatsRed from '@/components/StatsRed'
 import LegendText from '@/components/LegendText'
 import Week from '@/components/Week'
 import Map from '@/components/Map'
@@ -54,9 +54,9 @@ export default {
     Create,
     About,
     Project,
-    StatsOne,
-    StatsTwo,
-    StatsThree,
+    NewChart,
+    StatsGold,
+    StatsRed,
     LegendText,
     Map,
     MapFields,

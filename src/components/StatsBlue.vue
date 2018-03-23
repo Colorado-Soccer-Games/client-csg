@@ -1,25 +1,25 @@
 <template>
-  <div class="StatsThree  wow animated slideInLeft">
+  <div class="StatsOne wow animated slideInLeft">
         <div class="wrap">
-      <h1 class="animated wow slideInUp">MOST ACTIVE GAMES</h1>
+      <h1 class="animated wow slideInUp"> MOST GAMES PER DAY</h1>
       </div>
-      <Chart/>
+      <StatsBlueMostGamesPerDay/>
   </div>
 </template>
 
 <script>
-import Chart from '@/components/Chart'
+import StatsBlueMostGamesPerDay from '@/components/StatsBlueMostGamesPerDay'
 
 export default {
-  name: 'StatsThree',
+  name: 'StatsBlue',
   components: {
-    Chart
+    StatsBlueMostGamesPerDay
   }
 }
 </script>
 
 <style scoped>
-.StatsThree{
+.StatsOne{
   padding-left: 1rem;
 }
 
@@ -31,7 +31,7 @@ export default {
 h1 {
 font-size: 1.5rem;
 padding: 10px;
-background-color:#FF6444;
+background-color:#00ADA9;
 border-top: 3px #aaa solid;
 max-width: 400px;
 color: #222;
@@ -40,4 +40,5 @@ text-align: center;
 border-bottom-left-radius: 5px;
 border-bottom-right-radius: 5px;
 }
+
 </style>
