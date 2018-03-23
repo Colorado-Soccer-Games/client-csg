@@ -18,22 +18,7 @@ export default {
         console.log('games', this.games)
       })
       .then(() => {
-        this.renderChart(
-          {
-            labels: ['TOTAL SCHEDULED GAMES'],
-            datasets: [
-              {
-                label: 'tester',
-                backgroundColor: '#2efd96',
-                data: [this.games, 0]
-              }
-            ]
-          },
-          {
-            responsive: HTMLOptGroupElement,
-            maintainAspectRatio: false
-          }
-        )
+        this.renderChart({ labels: ['TOTAL SCHEDULED GAMES'], datasets: [{ label: 'tester', backgroundColor: '#FF6444', data: [this.games, 0] }] }, { responsive: HTMLOptGroupElement, maintainAspectRatio: false })
       })
   }
 }

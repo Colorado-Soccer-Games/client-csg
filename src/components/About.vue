@@ -28,7 +28,6 @@
 <script>
 import Chart from '@/components/Chart'
 
-
 export default {
   name: 'About',
   components: {
@@ -47,7 +46,6 @@ max-height: 200px;
 padding-top: 2rem;
 font-family: 'Lato', sans-serif;
 }
-
 
 .toggle-buttons-wrapper {
 display: flex;

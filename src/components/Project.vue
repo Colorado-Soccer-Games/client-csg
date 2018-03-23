@@ -11,14 +11,14 @@
 <div class="twilio-form">
 <form>
   <p class="text-title"><img class="phone" src="../../static/phone.png" alt=""> SET UPDATES/REMINDERS FOR GAMES<p>
-  <p class="text-deets"> To recieve text updates and notifications about games via SMS enter the game name and your phone number to begin.<p>
+  <p class="text-deets"> To recieve text updates and notifications about specific games via SMS, enter the game name and the associated phone number to begin.<p>
     <br>
     <div clas="imarow">
   <p class="text-label">GAME NAME:</p>
   <input type="text" name="location" maxlength="25">
       <br>
-            <br>
-      </div>
+      <br>
+</div>
             <div clas="imarow">
   <p class="text-label">PHONE NUMBER:</p>
   <input type="number" name="location" maxlength="25">
@@ -31,30 +31,29 @@
 </div>
 </div>
 <div class="right">
-<h1>VIEW GAME DATA</h1>
-<p class="desc">All past games have data associated to help players make the most informed decisions. </p>
+<h1 class="wow animated slideInDown">VIEW GAME DATA</h1>
+<p class="desc animated wow fadeIn">All past games contain data so players make the most better decisions. </p>
 <br>
 <br>
-<h1>GET FIELD INFO</h1>
-<p class="desc">Before joining a game, check out the field information to see what is available.</p>
+<h1 class="wow animated slideInDown">GET FIELD INFO</h1>
+<p class="desc animated wow fadeIn">Before joining a game, check out the available field information.</p>
 <br>
 <br>
-<h1>JOIN A GAME</h1>
-<p class="desc">To attend a game simply click the join button from the associated game below.</p>
+<h1 class="wow animated slideInDown">JOIN A GAME</h1>
+<p class="desc animated wow fadeIn">To attend a game simply click the join button from the game below.</p>
 <br>
 <br>
-<h1>SET TEXT UPDATES</h1>
-<p class="desc">Enter a phone number for games to receive SMS reminders/cancellations.</p>
+<h1 class="wow animated slideInDown">SET TEXT UPDATES</h1>
+<p class="desc animated wow fadeIn">Enter a phone number to receive SMS reminders/cancellations.</p>
 <br>
-<h6> CREATE/HOST A GAME <img class="arrow" src="../../static/arrow.png" alt=""></h6>
-<p class="desc">Don't see a game in your vicinity? Use the form on the left to create one!</p>
+<h6> CREATE/HOST A GAME <img class="arrow" src="../../static/darkgrey.png" alt=""></h6>
+<p class="greeny animated wow fadeIn">Don't see a game in your vicinity? Use the form on the left to create one!</p>
 </div>
 </div>
 </div>
 </template>
 
 <script>
-
 
 import Chart from '@/components/Chart'
 
@@ -83,7 +82,7 @@ h1 {
   background-color: #2EFD96;
   color: #222;
   font-size: 1.2rem;
-  padding:2px 0 0 2px;
+  padding:6px 0 0 6px;
   /* border-top: 4px #aaa solid; */
   font-family: 'Lato', sans-serif;
   font-weight: 900;
@@ -91,7 +90,7 @@ h1 {
   height: 30px;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 2px;
+  /* border-bottom-left-radius: 2px; */
 }
 h2 {
   color: #76F4B5;
@@ -111,20 +110,21 @@ h5 {
     font-size: .9rem;
 }
 h6 {
-  color: white;
+  color: #222;
       /* padding-left: 10px;
       padding-bottom: 20px;
             padding-top: 10px; */
-                background-color: #474143;
+            /* border-left:#2EFD96 4px solid; */
+                background-color:#FFC636;
       font-size: 1.2rem;
       padding:5px 0 9px 5px;
       /* border-top: 4px #aaa solid; */
   font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        max-width: 230px;
+        font-weight: 800;
+        max-width: 250px;
                        border-top-right-radius: 2px;
                 border-bottom-right-radius: 10px;
-                border-bottom-left-radius: 2px;
+                /* border-bottom-left-radius: 2px; */
 }
 
 .new1 {
@@ -210,7 +210,7 @@ button:hover {
   height: 30px;
   background-color: #222222;
 color:  #2EFD96;
-   border: 2px solid #2EFD96 ;
+   /* border: 2px solid #2EFD96 ; */
 font-size: 14px;
 font-family: 'Lato', sans-serif;
 font-weight: 900;
@@ -268,7 +268,7 @@ font-size: 18px;
 
 .left {
 background-color: #2EFD96;
-min-width: 43%;
+min-width: 53%;
 color:#222;
 padding: 2rem 2rem 1rem 2rem;
 /* padding-right: 35px; */
@@ -291,12 +291,19 @@ p {
   margin-left: 5px;
 }
 
+.greeny {
+  color: #aaa;
+  margin-top:5px;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
 .text-title {
   font-size: 13px;
   font-weight: 900;
   color: #222;
-  padding-bottom: 14px;
-  border-bottom: 3px #474143 solid;
+  /* padding-bottom: 14px;
+  border-bottom: 3px #474143 solid; */
 }
 
 .text-deets {
@@ -306,6 +313,7 @@ p {
 }
 
 .aboutlogo {
+  /* padding-top:4px; */
   max-height: 10px;
 }
 .text-label {
@@ -348,6 +356,7 @@ height:20px;
   justify-content: center;
   height: 40px;
   width: 100%;
+  border: none;
   background-color: #222;
   color: #2EFD96;
   margin-top: 10px;
@@ -375,6 +384,10 @@ height:20px;
 
 .arrow {
 padding-top:2px;
- height:14px;
+ height:16px;
+}
+
+.twilio-form{
+padding-top: 1rem;
 }
 </style>
