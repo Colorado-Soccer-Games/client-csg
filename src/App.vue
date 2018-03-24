@@ -29,6 +29,7 @@ import Create from '@/components/Create'
 import About from '@/components/About'
 import Project from '@/components/Project'
 import NewChart from '@/components/NewChart'
+import NewRed from '@/components/NewRed'
 import StatsGold from '@/components/StatsGold'
 import StatsRed from '@/components/StatsRed'
 import LegendText from '@/components/LegendText'
@@ -55,6 +56,7 @@ export default {
     About,
     Project,
     NewChart,
+    NewRed,
     StatsGold,
     StatsRed,
     LegendText,

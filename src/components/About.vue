@@ -6,7 +6,7 @@
           </router-link>
 
           <router-link :to="{name: 'NewChart'}">
-          <button class="stats1"> MOST GAMES PER DAYS</button>
+          <button class="stats1"> MOST GAMES PER DAY</button>
           </router-link>
 
           <router-link :to="{name: 'StatsGold'}">

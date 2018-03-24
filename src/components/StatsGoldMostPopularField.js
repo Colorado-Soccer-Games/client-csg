@@ -14,11 +14,17 @@ export default {
       .catch(error => console.error("Error:", error))
       // eslint-disable-next-line
       .then(response => {
+
         this.games = response.games.length
         console.log('games', this.games)
       })
       .then(() => {
-        this.renderChart({ labels: ['TOTAL SCHEDULED GAMES'], datasets: [{ label: 'tester', backgroundColor: '#FFC636', data: [this.games, 0] }] }, { responsive: HTMLOptGroupElement, maintainAspectRatio: false })
+        this.renderChart({ labels: ['TOTAL SCHEDULED GAMES'],
+          datasets: [{ label: 'tester',
+            backgroundColor: '#FFC636',
+            data: [this.games, 0] }] }, {
+          responsive: HTMLOptGroupElement,
+          maintainAspectRatio: false })
       })
   }
 }

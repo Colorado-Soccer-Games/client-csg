@@ -1,5 +1,6 @@
 <template>
-  <vue-chart type='bar' :data='chartData'></vue-chart>
+  <vue-chart type='bar' :data='chartData'
+  :options='options'></vue-chart>
 </template>
 
 <script>
@@ -88,7 +89,7 @@ export default {
         display: false
     },
         legend: {
-        display: false
+        display: true
     },
     },
     mounted(){
@@ -100,7 +101,7 @@ export default {
 				.then(response => response.json())
 				.then(peopleVar => {
 					this.people = peopleVar.people;
-					this.createChartDatasets();
+					// this.createChartDatasets();
 				}
 			);
         },
