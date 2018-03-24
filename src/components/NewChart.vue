@@ -14,45 +14,98 @@ export default {
   // eslint-disable-next-line
   data: () => ({
     chartData: {
-      labels: ['Total Games'],
+      labels: ['TOTAL GAMES PER WEEKDAY'],
       datasets: [
         {
-          label: 'Monday',
-          backgroundColor: '#aaa',
-          data: [10]
+          label: 'MONDAY',
+          borderColor: '#dcdada',
+          hoverBorderColor: '#aaa',
+          borderWidth:'3',
+            hoverBackgroundColor:'#2efd96',
+            borderWidth:'3',
+            backgroundColor: '#00ADA9',
+            data: [4]
         },
         {
-          label: 'Tuesday',
-          backgroundColor: '#aaa',
-          data: [13]
+          label: 'TUESDAY',
+          borderColor: '#dcdada',
+          hoverBorderColor: '#aaa',
+          hoverBackgroundColor:'#2efd96',
+          backgroundColor: '#00ADA9',
+                    borderWidth:'3',
+          data: [6]
         },
         {
-          label: 'Wednesday',
-          backgroundColor: '#aaa',
-          data: [11]
+          label: 'WEDNESDAY',
+          borderColor: '#dcdada',
+          hoverBorderColor: '#aaa',
+                    hoverBackgroundColor:'#2efd96',
+          borderWidth:'3',
+          backgroundColor: '#00ADA9',
+          data: [1]
         },
         {
-          label: 'Thrusday',
-          backgroundColor: '#aaa',
-          data: [8]
+          label: 'THURSDAY',
+          borderColor: '#dcdada',
+          hoverBorderColor: '#aaa',
+                    hoverBackgroundColor:'#2efd96',
+          borderWidth:'3',
+          backgroundColor: '#00ADA9',
+          data: [2]
         },
         {
-          label: 'Friday',
-          backgroundColor: '#aaa',
-          data: [7]
+          label: 'FRIDAY',
+          borderColor: '#dcdada',
+          hoverBorderColor: '#aaa',
+                    hoverBackgroundColor:'#2efd96',
+          borderWidth:'3',
+          backgroundColor: '#00ADA9',
+          data: [3]
         },
         {
-          label: 'Saturday',
-          backgroundColor: '#aaa',
+          label: 'SATURDAY',
+          borderColor: '#dcdada',
+          hoverBorderColor: '#aaa',
+          borderSkipped:'top',
+                    hoverBackgroundColor:'#2efd96',
+          borderWidth:'3',
+          backgroundColor: '#00ADA9',
           data: [5]
         },
         {
-          label: 'Sunday',
-          backgroundColor: '#aaa',
-          data: [8]
+          label: 'SUNDAY',
+          borderColor: '#dcdada',
+          hoverBorderColor: '#aaa',
+                    hoverBackgroundColor:'#2efd96',
+          borderWidth:'3',
+          backgroundColor: '#00ADA9',
+          data: [5]
         }
       ]
+    },
+    options: {
+        gridLines: {
+        display: false
+    },
+        legend: {
+        display: false
+    },
+    },
+    mounted(){
+		this.loadPeople();
+	},
+	methods: {
+		loadPeople() {
+			fetch("https://localhost:3000/")
+				.then(response => response.json())
+				.then(peopleVar => {
+					this.people = peopleVar.people;
+					this.createChartDatasets();
+				}
+			);
+        },
     }
+
   })
 }
 </script>
