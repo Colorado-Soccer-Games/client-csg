@@ -176,7 +176,7 @@
       </div>
       <div id="stats">
         <!-- <h4>CURRENT STATS</h4> -->
-          <NewChart/>
+          <!-- <NewChart/> -->
       </div>
   </div>
 </template>

@@ -63,7 +63,7 @@ Hampden Heights Park
 <br>
 Kennedy Soccer Complex
 <br>
-Lowry Sports Ce
+Lowry Sports Fields
 <br>
 Longmont Park
 <br>
@@ -106,7 +106,7 @@ Silver Creek High School
 Sloan Lake Park
 </li>
 <li class="flex-item">
-Sedalia Fields
+Sayian Fields
 <br>
 Stapelton Lake Park
 <br>
@@ -174,6 +174,11 @@ height: 140px;
   font-weight: bold;
   font-size: 1em;
   text-align: left;
+
+}
+li:hover {
+ text-decoration: underline;
+  cursor: pointer;
 }
 
 </style>

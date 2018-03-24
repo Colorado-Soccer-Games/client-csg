@@ -279,6 +279,26 @@ export default {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13) inset;
 }
 
+
+.card:hover {
+  color: #222222;
+  background-color: #b6b5b5;
+  width: 120px;
+  border-radius: 1px;
+  border-top: 4px solid white;
+  border-right: 4px solid rgb(199, 198, 198);
+  margin-top: 20px;
+  max-height: 185px;
+  min-height: 185px;
+  border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 3px;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13),
+    0 0 40px rgba(0, 0, 0, 0.13) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13),
+    0 0 40px rgba(0, 0, 0, 0.13) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.53) inset;
+}
+
 h1 {
   text-align: center;
   font-size: 14px;

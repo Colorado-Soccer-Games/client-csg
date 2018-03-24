@@ -79,7 +79,7 @@ export default {
 }
 
 h1 {
-  background-color: #2EFD96;
+       background-color:rgb(42, 230, 136);
   color: #222;
   font-size: 1.2rem;
   padding:6px 0 0 6px;
@@ -115,7 +115,7 @@ h6 {
       padding-bottom: 20px;
             padding-top: 10px; */
             /* border-left:#2EFD96 4px solid; */
-                background-color:#FFC636;
+                background-color:rgb(42, 230, 136);
       font-size: 1.2rem;
       padding:5px 0 9px 5px;
       /* border-top: 4px #aaa solid; */
@@ -271,6 +271,7 @@ background-color: #2EFD96;
 min-width: 53%;
 color:#222;
 padding: 2rem 2rem 1rem 2rem;
+border-bottom-right-radius: 5px;
 /* padding-right: 35px; */
 /* min-height: 200px; */
 }

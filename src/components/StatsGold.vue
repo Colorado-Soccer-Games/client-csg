@@ -1,8 +1,8 @@
 <template>
   <div id="Wrapper">
-      <div id="Monday">
+      <div id="this">
       <h1 class="wow animated slideInLeft">MOST POPULAR FIELDS</h1>
-    <div class="data">
+    <div class="data wow animated slideInLeft">
         <div class="FullGameInfoCard" v-bind:key="field.games" v-for="field in data.games" v-if="field.stats_games_completed > 44">
        <div class="inline-column id">
           <img class="icon wow animated slideInLeft" src="../../static/full_normal.png"/>
@@ -16,8 +16,12 @@
         <p class="day"> <span></span> {{ field.day }}</p>
        </div>
        <div class="inline-column inset stats">
-        <p class="players"><span class="bold">Total Players: </span>{{ field.stats_total_players }}</p>
-        <p class="completed"><span class="bold">Total Games: </span>{{ field.stats_games_completed }}</p>
+        <!-- <p class="players"><span class="bold">Total Players: </span>{{ field.stats_total_players }}</p> -->
+        <p class="completed"><span class="bold wow animated slideInDown">Total Games: </span>
+        <span class="highlight wow animated fadeIn">
+        {{ field.stats_games_completed }}
+        </span>
+        </p>
        </div>
       </div>
       <!-- FullGameInfoCard -->
@@ -64,7 +68,7 @@ export default {
 .data {
   color: #222222;
   background-color: #dcdada;
-  width: 560px;
+  width: 600px;
   padding-top:20px;
   border-radius: 1px;
   border-top: 4px solid white;
@@ -196,8 +200,8 @@ padding: 2px 0 10px 3px;
 }
 .stats {
   border-top: 2px white solid;
-  max-width: 100px;
-  min-width: 100px;
+  max-width: 136px;
+  min-width: 136px;
   color: black;
   background-color: #FFC636;
   border-bottom-right-radius: 10px;
@@ -216,8 +220,8 @@ padding: 2px 0 10px 3px;
 
 .completed {
   padding: 4px 0 0 4px;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .game-id {
@@ -258,6 +262,17 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55), 0 0 40px rgba(0, 0, 0, 0.55) inset;
 .row {
   /* display: flex;
   flex-direction: row; */
+}
+
+.highlight {
+  background-color: black;
+  color:#dcdada;
+  padding: 2px 2px 2px 2px;
+  border-bottom: #dcdada solid 4px;
+  border-bottom-left-radius: 5px;
+  -webkit-box-shadow:0 0 2px rgba(0,0,0,0.6);
+-moz-box-shadow:0 0 2px rgba(0,0,0,0.6);
+box-shadow:0 0 2px rgba(0,0,0,0.6);
 }
 
 

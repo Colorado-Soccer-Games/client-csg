@@ -1,6 +1,9 @@
 <template>
+<div>
+    <h1 class="animated wow slideInUp"> MOST GAMES PER DAY</h1>
   <vue-chart type='bar' :data='chartData'
   :options='options'></vue-chart>
+  </div>
 </template>
 
 <script>
@@ -112,4 +115,24 @@ export default {
 </script>
 
 <style scoped>
+
+
+
+h1 {
+  text-align: center;
+  font-size: 14px;
+  min-width: 200px;
+  max-width: 200px;
+  background-color: #00ADA9;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom:30px;
+  border-bottom: 3px solid #dcdada;
+  color: #222222;
+  font-weight: 900;
+  /* border-top-right-radius: 5px; */
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 10px;
+}
+
 </style>
