@@ -1,6 +1,6 @@
 <template>
   <div id="Wrapper">
-      <div id="this">
+      <div id="left">
       <h1 class="wow animated slideInLeft">MOST POPULAR FIELDS</h1>
     <div class="data wow animated slideInLeft">
         <div class="FullGameInfoCard" v-bind:key="field.games" v-for="field in data.games" v-if="field.stats_total_players > 210">
@@ -28,6 +28,127 @@
       <!-- row -->
     </div>
       </div>
+<div id="right">
+<h2>FIELD INFORMATION:</h2>
+<p class="info-text">Games that have had over 100 players attend.</p>
+
+<div class="flexy">
+<span class="head1">PARK/FIELD
+</span>
+<span class="head2">PLAYERS
+</span>
+<br>
+</div>
+
+<div class="flexy">
+<span class="lab1">Congress Park
+</span>
+<span class="lab2">288
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">Boulder Sports Park
+</span>
+<span class="lab2">241
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">Sloan's Lake
+</span>
+<span class="lab2">214
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">RiNo Athletic Fields
+</span>
+<span class="lab2">211
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">Denver Park Complex
+</span>
+<span class="lab2">188
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">City Park
+</span>
+<span class="lab2">167
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">Colfax Sports Park
+</span>
+<span class="lab2">145
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">Aruora Sports Park
+</span>
+<span class="lab2">140
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">Arvada Park
+</span>
+<span class="lab2">135
+</span>
+</div>
+
+
+<div class="flexy">
+<span class="lab1">Boulder Indoor
+</span>
+<span class="lab2">128
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">Overland Park
+</span>
+<span class="lab2">123
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">Curtis Park
+</span>
+<span class="lab2">114
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">Broomfield Field
+</span>
+<span class="lab2">112
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">Pulaski Park
+</span>
+<span class="lab2">109
+</span>
+</div>
+
+<div class="flexy">
+<span class="lab1">Five Points Field
+</span>
+<span class="lab2">102
+</span>
+</div>
+<span><img class="logo" src="../../static/grey.png">
+</span>
+
+</div>
 </div>
 </template>
 
@@ -56,14 +177,81 @@ export default {
 </script>
 <style scoped>
 #Wrapper {
-  /* display: flex;
-  justify-content: space-between; */
-  color: #dcdada;
+  display: flex;
+  justify-content: space-between;
+  color: #3b3b3b;
   /* background-color: #222222; */
   font-family: "Lato", sans-serif;
   /* width: 100vw; */
   /* margin: 1rem; */
 }
+
+.logo {
+  height: 35px;
+  padding-top: 20px;
+  margin-left: 100px;
+  /* justify-content: center; */
+}
+.head1 {
+    padding-top: 20px;
+font-size: 18px;
+font-weight: 400;
+padding-left: 4px;
+font-family: 'Lalezar', sans-serif;
+color: #3b3b3b;
+}
+.head2 {
+    padding-top: 20px;
+font-size: 18px;
+font-weight: 400;
+font-family: 'Lalezar', sans-serif;
+color: #3b3b3b;
+}
+
+.lab1{
+  font-size: 14px;
+font-weight: 600;
+padding-left: 9px;
+color: rgb(69, 68, 68);
+padding-top: 4px;
+}
+.lab2{
+  font-size: 14px;
+font-weight: 400;
+padding-right: 39px;
+color: #dcdada;
+padding-top: 4px;
+}
+.flexy {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.info-text {
+  font-size: 10px;
+  color: #3b3b3b;
+    padding: 5px 0 0 5px;
+}
+#right {
+  width: 240px;
+  background-color:#FF6444;
+  margin-bottom: 2rem;
+    margin-top: 3.4rem;
+      border-radius: 1px;
+      border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.43),
+    0 0 40px rgba(0, 0, 0, 0.43) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.43),
+    0 0 40px rgba(0, 0, 0, 0.43) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.43) inset;
+    border-radius: 1px;
+  border-top: 4px solid white;
+  border-right: 4px solid rgb(199, 198, 198);
+  color: #dcdada;
+}
+
 
 .data {
   color: #222222;
@@ -100,6 +288,26 @@ h1 {
   /* border-top-right-radius: 5px; */
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 10px;
+}
+h2 {
+  text-align: center;
+  font-size: 14px;
+  min-width: 200px;
+  max-width: 200px;
+  background-color: #dcdada;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #FF6444;
+  color: #222222;
+  font-weight: 900;
+  /* border-top-right-radius: 5px; */
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 10px;
+       -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.43),
+    0 0 40px rgba(0, 0, 0, 0.43) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.43),
+    0 0 40px rgba(0, 0, 0, 0.43) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.43) inset;
 }
 
 .FullGameInfoCard {
