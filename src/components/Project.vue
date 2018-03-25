@@ -2,6 +2,7 @@
   <div id="Stats--Wrapper" class="wow slideInLeft animated">
 <div class="wrapperz">
 <div class="left">
+      <!-- <img class="kkk" src="/../../static/shadow.png"> -->
 <div class="about-text">
   <p><img class="aboutlogo" src="/../../static/green.png">CSG is a web application for the people of Colorado to help orgainize & track statistical data for all active pick-up soccer games across the state.
     <br>
@@ -47,7 +48,7 @@
 <p class="desc animated wow fadeIn">Enter a phone number to receive SMS reminders/cancellations.</p>
 <br>
 <h6> CREATE/HOST A GAME <img class="arrow" src="../../static/darkgrey.png" alt=""></h6>
-<p class="greeny animated wow fadeIn">Don't see a game in your vicinity? Use the form on the left to create one!</p>
+<p class="greeny animated wow fadeIn">Don't see a game in your vicinity? Use the form to create one!</p>
 </div>
 </div>
 </div>

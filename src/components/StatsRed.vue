@@ -3,7 +3,7 @@
       <div id="this">
       <h1 class="wow animated slideInLeft">MOST POPULAR FIELDS</h1>
     <div class="data wow animated slideInLeft">
-        <div class="FullGameInfoCard" v-bind:key="field.games" v-for="field in data.games" v-if="field.stats_total_players > 100">
+        <div class="FullGameInfoCard" v-bind:key="field.games" v-for="field in data.games" v-if="field.stats_total_players > 210">
        <div class="inline-column id">
           <img class="icon wow animated slideInLeft" src="../../static/full_competitive.png"/>
         <p class="game-id">ID: {{ field.id }}</p>
@@ -17,7 +17,7 @@
        </div>
        <div class="inline-column inset stats">
         <!-- <p class="players"><span class="bold">Total Players: </span>{{ field.stats_total_players }}</p> -->
-        <p class="completed"><span class="bold wow animated slideInDown">Total Players: </span>
+        <p class="completed"><span class="bold wow animated slideInDown">Players: </span>
         <span class="highlight wow animated fadeIn">
         {{ field.stats_total_players }}
         </span>
@@ -159,6 +159,14 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55) inset
   flex-flow: row no wrap;
   font-weight: 500;
   font-size: 14px;
+        cursor: pointer;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(124, 42, 42, 0.33);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  -webkit-transition: box-shadow 1s ease-in;
+  -moz-transition: box-shadow 1s ease-in;
+  -o-transition: box-shadow 1s ease-in;
+  transition: box-shadow 3s ease-in;
 }
 
 .day {
@@ -205,6 +213,14 @@ padding: 2px 0 10px 3px;
   color: black;
   background-color: #FF6444;
   border-bottom-right-radius: 10px;
+        cursor: pointer;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(124, 42, 42, 0.33);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  -webkit-transition: box-shadow 1s ease-in;
+  -moz-transition: box-shadow 1s ease-in;
+  -o-transition: box-shadow 1s ease-in;
+  transition: box-shadow 3s ease-in;
 }
 
 .icon {

@@ -3,7 +3,7 @@
       <div id="this">
       <h1 class="wow animated slideInLeft">MOST POPULAR FIELDS</h1>
     <div class="data wow animated slideInLeft">
-        <div class="FullGameInfoCard" v-bind:key="field.games" v-for="field in data.games" v-if="field.stats_games_completed > 44">
+        <div class="FullGameInfoCard" v-bind:key="field.games" v-for="field in data.games" v-if="field.stats_games_completed > 70">
        <div class="inline-column id">
           <img class="icon wow animated slideInLeft" src="../../static/full_normal.png"/>
         <p class="game-id">ID: {{ field.id }}</p>
@@ -103,10 +103,12 @@ h1 {
 }
 
 .FullGameInfoCard {
+
   display: flex;
   margin-bottom: 2rem;
   /* border: 2px #dcdada solid; */
 }
+
 
 .inline-column {
   display: flex;
@@ -159,6 +161,14 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55) inset
   flex-flow: row no wrap;
   font-weight: 500;
   font-size: 14px;
+        cursor: pointer;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(124, 42, 42, 0.33);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  -webkit-transition: box-shadow 1s ease-in;
+  -moz-transition: box-shadow 1s ease-in;
+  -o-transition: box-shadow 1s ease-in;
+  transition: box-shadow 3s ease-in;
 }
 
 .day {
@@ -205,6 +215,14 @@ padding: 2px 0 10px 3px;
   color: black;
   background-color: #FFC636;
   border-bottom-right-radius: 10px;
+      cursor: pointer;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(124, 42, 42, 0.33);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  -webkit-transition: box-shadow 1s ease-in;
+  -moz-transition: box-shadow 1s ease-in;
+  -o-transition: box-shadow 1s ease-in;
+  transition: box-shadow 3s ease-in;
 }
 
 .icon {

@@ -28,7 +28,7 @@ export default {
             hoverBackgroundColor:'#2efd96',
             borderWidth:'3',
             backgroundColor: '#00ADA9',
-            data: [4]
+            data: [2]
         },
         {
           label: 'TUESDAY',
@@ -37,7 +37,7 @@ export default {
           hoverBackgroundColor:'#2efd96',
           backgroundColor: '#00ADA9',
                     borderWidth:'3',
-          data: [6]
+          data: [3]
         },
         {
           label: 'WEDNESDAY',
@@ -46,7 +46,7 @@ export default {
                     hoverBackgroundColor:'#2efd96',
           borderWidth:'3',
           backgroundColor: '#00ADA9',
-          data: [1]
+          data: [2]
         },
         {
           label: 'THURSDAY',
@@ -55,7 +55,7 @@ export default {
                     hoverBackgroundColor:'#2efd96',
           borderWidth:'3',
           backgroundColor: '#00ADA9',
-          data: [2]
+          data: [4]
         },
         {
           label: 'FRIDAY',
@@ -64,7 +64,7 @@ export default {
                     hoverBackgroundColor:'#2efd96',
           borderWidth:'3',
           backgroundColor: '#00ADA9',
-          data: [3]
+          data: [5]
         },
         {
           label: 'SATURDAY',
@@ -74,7 +74,7 @@ export default {
                     hoverBackgroundColor:'#2efd96',
           borderWidth:'3',
           backgroundColor: '#00ADA9',
-          data: [5]
+          data: [6]
         },
         {
           label: 'SUNDAY',
@@ -83,7 +83,7 @@ export default {
                     hoverBackgroundColor:'#2efd96',
           borderWidth:'3',
           backgroundColor: '#00ADA9',
-          data: [5]
+          data: [6]
         }
       ]
     },
