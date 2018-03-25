@@ -1,11 +1,11 @@
 <template>
   <div id="Wrapper">
       <div id="left">
-      <h1 class="wow animated slideInLeft">MOST POPULAR FIELDS</h1>
+      <h1 class="wow animated sildeInLeft">MOST POPULAR FIELDS</h1>
     <div class="data wow animated slideInLeft">
-        <div class="FullGameInfoCard" v-bind:key="field.games" v-for="field in data.games" v-if="field.stats_total_players > 210">
+        <div class="FullGameInfoCard animated bounceInLeft" v-bind:key="field.games" v-for="field in data.games" v-if="field.stats_total_players > 210">
        <div class="inline-column id">
-          <img class="icon wow animated slideInLeft" src="../../static/full_competitive.png"/>
+          <img class="icon" src="../../static/full_competitive.png"/>
         <p class="game-id">ID: {{ field.id }}</p>
        </div>
        <div class="inset place">
@@ -28,7 +28,8 @@
       <!-- row -->
     </div>
       </div>
-<div id="right">
+
+<div class="right animated slideInUp">
 <h2>FIELD INFORMATION:</h2>
 <p class="info-text">Games that have had over 100 players attend.</p>
 
@@ -145,7 +146,7 @@
 <span class="lab2">102
 </span>
 </div>
-<span><img class="logo" src="../../static/grey.png">
+<span><img class="logo animated sildeInLeft" src="../../static/grey.png">
 </span>
 
 </div>
@@ -233,7 +234,7 @@ padding-top: 4px;
   color: #3b3b3b;
     padding: 5px 0 0 5px;
 }
-#right {
+.right {
   width: 240px;
   background-color:#FF6444;
   margin-bottom: 2rem;
