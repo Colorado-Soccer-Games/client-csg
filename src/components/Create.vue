@@ -206,7 +206,7 @@ export default {
   box-sizing: inherit;
 } */
 #CreateGame--Wrapper {
-  color: #aaaaaa;
+  color: #2efd96;
   background-color: #222222;
   width: 30%;
   /* height: 400px; */
@@ -221,12 +221,12 @@ h1 {
   /* font-family: 'Lalezar', sans-serif; */
   font-weight: 700;
   color: #2efd96;
-  color: #2d2d2d;
+  /* color: #2d2d2d; */
 }
 
 h3 {
   color: #2efd96;
-  color: #222;
+  /* color: #222; */
   font-family: "Lato", sans-serif;
   font-size: 12px;
   display: inline;
