@@ -122,8 +122,7 @@ cursor: pointer;
 -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
 box-shadow:0 0 20px rgba(0,0,0,0.8);
 }
-.wrapperz {
+/* .wrapperz {
 
-}
-
+} */
 </style>

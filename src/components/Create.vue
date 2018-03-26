@@ -226,7 +226,7 @@ h1 {
 
 h3 {
   color: #2efd96;
-  color: #aaaaaa;
+  color: #222;
   font-family: "Lato", sans-serif;
   font-size: 12px;
   display: inline;
@@ -265,6 +265,31 @@ input {
     border: none;
     resize: none;
 } */
+
+form {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  color: #2efd96;
+  background-color: #222222;
+  background: #222222;
+  background: -moz-linear-gradient(top, #222222 0%, #2d2d2d 100%);
+  background: -webkit-linear-gradient(top, #222222 0%, #2d2d2d 100%);
+  background: linear-gradient(to bottom, #222222 0%, #2d2d2d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#222222",
+      endColorstr="#2d2d2d",
+      GradientType=0
+    );
+  padding-top: 0.5rem;
+  border: 4px solid #2efd96;
+  border-top: 2px #2d2d2d solid;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.55),
+    0 0 40px rgba(0, 0, 0, 0.55) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.55),
+    0 0 40px rgba(0, 0, 0, 0.55) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.55), 0 0 40px rgba(0, 0, 0, 0.55) inset;
+}
+
 .form--button {
   display: flex;
   justify-content: center;
@@ -292,7 +317,7 @@ input {
 
 .form--button:hover {
   cursor: pointer;
-  background-color: #2b2b2b;
+  background-color: #2d2d2d;
   color: #2efd96;
   border-top: 2px #2efd96 solid;
 
@@ -304,29 +329,6 @@ input {
   font-size: 18px;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-}
-form {
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  color: #2efd96;
-  /* background-color: #2D2D2D; */
-  background: #222222;
-  background: -moz-linear-gradient(top, #222222 0%, #2d2d2d 100%);
-  background: -webkit-linear-gradient(top, #222222 0%, #2d2d2d 100%);
-  background: linear-gradient(to bottom, #222222 0%, #2d2d2d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr="#222222",
-      endColorstr="#2d2d2d",
-      GradientType=0
-    );
-  padding-top: 0.5rem;
-  border: 4px solid #2efd96;
-  border-top: 2px #2d2d2d solid;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.55),
-    0 0 40px rgba(0, 0, 0, 0.55) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.55),
-    0 0 40px rgba(0, 0, 0, 0.55) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.55), 0 0 40px rgba(0, 0, 0, 0.55) inset;
 }
 
 .effect7:before,
