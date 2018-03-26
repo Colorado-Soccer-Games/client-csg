@@ -234,7 +234,7 @@ padding-top: 4px;
     padding: 5px 0 0 5px;
 }
 .right {
-  width: 240px;
+  width: 243px;
   background-color:#FF6444;
   margin-bottom: 2rem;
     margin-top: 3.4rem;
