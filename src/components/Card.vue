@@ -1,113 +1,47 @@
 <template>
-  <div id="Wrapper">
-    <div class="labelwrap">
-
-      <div id="Monday">
-      <h1>MONDAY</h1>
-        <Card class="card"
-        :field="field"
-          v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Monday'">
-
-        </Card>
-      </div>
-      <div id="Tuesday">
-      <h1>TUESDAY</h1>
-        <Card class="card"
-               :field="field" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Tuesday'">
-
-      </Card>
-      </div>
-      <div id="Wednesday">
-      <h1>WEDNESDAY</h1>
-        <Card class="card"
-               :field="field"
-               v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Wednesday'">
-
-      </Card>
-      </div>
-      <div id="Thursday">
-      <h1>THURSDAY</h1>
-        <Card class="card"
-               :field="field"
-               v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Thursday'">
-
-      </Card>
-      </div>
-      <div id="Friday">
-      <h1>FRIDAY</h1>
-        <Card class="card"
-               :field="field"
-               v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Friday'">
-
-      </Card>
-      </div>
-      <div id="Saturday">
-      <h1>SATURDAY</h1>
-        <Card class="card"
-               :field="field"
-               v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Saturday'">
-
-      </Card>
-      </div>
-      <div id="Sunday">
-      <h1>SUNDAY</h1>
-          <Card class="card"
-                 :field="field"
-                 v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Sunday'">
-
-      </Card>
-      </div>
-      <!-- wrapper divs  -->
-    </div>
-    <br>
-<br>
-</div>
+  <div class="card">
+          <span>
+          <h2> {{ field.location }} </h2>
+          <br>
+          <h3> {{ field.city }} </h3>
+              <div class="field-deets">
+                <p class="label-data"><span class="label">Time: </span>{{field.time}}</p>
+                <p class="label-data"><span class="label">Level: </span>{{field.level}}</p>
+                <p class="label-data"><span class="label">Field: </span>{{field.surface}}</p>
+                <p class="label-data"><span class="label">Goals: </span>{{field.goals}}</p>
+              </div>
+              <div class="deets">
+                <div class="split-left">
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_water}}</p>
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_restrooms}}</p>
+                </div >
+                <div class="split-right">
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_lights}}</p>
+                </div>
+              </div>
+              <div class="card-buttons">
+                <h4>Total:</h4> <span>{{field.stats_player_count}} </span>
+                <br>
+                <button> Join </button>
+              </div>
+          </span>
+  </div>
 </template>
 
+
 <script>
-
-import Card from '@/components/Card'
-
-// more needed for importing card?
 export default {
-  name: 'Week',
+  name: 'Card',
   data () {
-    return {
-      data: []
-    }
+    return {}
   },
-  mounted () {
-    this.load()
-  },
-  methods: {
-    load () {
-      fetch('http://localhost:3000/')
-        .then(res => res.json())
-        .then(data => {
-          this.data = data
-          // console.log(data);
-        })
-    }
-  },
-    components: {
-    Card
-  }
+  props: ["field"]
 }
 </script>
-
-
 <style scoped>
-#Wrapper {
-  display: flex;
-  justify-content: space-between;
-  color: #dcdada;
-  background-color: #222222;
-  font-family: "Lato", sans-serif;
-  /* width: 100vw; */
-  /* margin: 1rem; */
-}
 
-/* .card {
+.card {
   color: #222222;
   background-color: #dcdada;
   width: 120px;
@@ -124,8 +58,8 @@ export default {
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13),
     0 0 40px rgba(0, 0, 0, 0.13) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13) inset;
-} */
-/* .card:hover {
+}
+.card:hover {
   color: #222222;
   background-color: #b6b5b5;
   width: 120px;
@@ -142,8 +76,7 @@ export default {
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13),
     0 0 40px rgba(0, 0, 0, 0.13) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.53) inset;
-} */
-
+}
 
 h1 {
   text-align: center;

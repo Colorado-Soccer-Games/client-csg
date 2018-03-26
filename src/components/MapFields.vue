@@ -5,7 +5,7 @@
 <li class="flex-item">
 Arvada High School
 <br>
-Aruora Sports Park
+Aroura Sports Park
 <br>
 Ash Grove Park
 <br>
@@ -13,7 +13,7 @@ Barnum W. Sports Center
 <br>
 Brighton Youth Sports Fields
 <br>
-Bear Creak Fields
+Bear Creek Fields
 <br>
 Boulder High School
 <br>
@@ -26,13 +26,13 @@ Congress Park
 <br>
 City Park
 <br>
-Cranmer Park
+Cramer Park
 <br>
 Carpenter Park Fields
 <br>
 Cheeseman Park
 <br>
-Colorado Soccer Complex
+Colo Soccer Complex
 <br>
 Daniels Athletic Complex
 </li>
@@ -99,7 +99,7 @@ RiNo Athletic Fields
 <br>
 Ruby Hill Park
 <br>
-Rooney Road Sports Complex
+Rooney Sports Complex
 <br>
 Silver Creek High School
 <br>

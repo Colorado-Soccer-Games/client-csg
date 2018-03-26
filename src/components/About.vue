@@ -5,7 +5,7 @@
           <button class="about"> ABOUT THE PROJECT </button>
           </router-link>
 
-          <router-link :to="{name: 'NewChart'}">
+          <router-link :to="{name: 'StatsBlue'}">
           <button class="stats1"> MOST GAMES PER DAY</button>
           </router-link>
 

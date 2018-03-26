@@ -16,6 +16,16 @@
             <input v-model='CreatedGame.city' type="text" name="city" maxlength="25">
           </div>
           <br>
+                    <div class="tester">
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone:</h3>
+            <input v-model='CreatedGame.phone_number' type="number" name="phone" maxlength="25">
+          </div>
+          <br>
+                              <div class="total">
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total:</h3>
+            <input v-model='CreatedGame.stats_player_count' type="number" name="player_total">
+          </div>
+          <br>
           <div class="flex">
             <div class="left">
             <h3>Day of Week:</h3>
@@ -220,7 +230,7 @@ h1 {
   font-family: "Lato", sans-serif;
   /* font-family: 'Lalezar', sans-serif; */
   font-weight: 700;
-  color: #2efd96;
+  color: #2d2d2d;
   /* color: #2d2d2d; */
 }
 
@@ -244,6 +254,17 @@ input[type="text"] {
   border-bottom: 2px #2efd96 solid;
   font-weight: 100;
   width: 70%;
+}
+input[type="number"] {
+  /* background-color: #222222; */
+  background: transparent;
+  color: #2efd96;
+  /* margin: 8px 0; */
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px #2efd96 solid;
+  font-weight: 100;
+  width: 33%;
 }
 
 input[type="radio"] {
@@ -425,6 +446,9 @@ form {
 }
 .nudge {
   padding-left: 24px;
+}
+.tester {
+  padding-left: 20px;
 }
 .location {
   padding-left: 24px;

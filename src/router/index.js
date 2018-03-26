@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Project from '@/components/Project'
-import NewChart from '@/components/NewChart'
+import StatsBlue from '@/components/StatsBlue'
 import StatsGold from '@/components/StatsGold'
 import StatsRed from '@/components/StatsRed'
 
@@ -15,9 +15,9 @@ export default new Router({
       component: Project
     },
     {
-      path: '/NewChart',
-      name: 'NewChart',
-      component: NewChart
+      path: '/StatsBlue',
+      name: 'StatsBlue',
+      component: StatsBlue
     },
     {
       path: '/StatsGold',

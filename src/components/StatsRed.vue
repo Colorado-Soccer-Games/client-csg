@@ -91,7 +91,7 @@
 </div>
 
 <div class="flexy">
-<span class="lab1">Aruora Sports Park
+<span class="lab1">Aurora Sports Park
 </span>
 <span class="lab2">140
 </span>
@@ -366,9 +366,9 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55) inset
   font-weight: 500;
   font-size: 14px;
         cursor: pointer;
-  -webkit-box-shadow: 0px 10px 5px -2px rgba(124, 42, 42, 0.33);
-  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0px 5px 5px -2px rgba(124, 42, 42, 0.33);
+  -moz-box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.33);
   -webkit-transition: box-shadow 1s ease-in;
   -moz-transition: box-shadow 1s ease-in;
   -o-transition: box-shadow 1s ease-in;
@@ -417,9 +417,9 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55) inset
   background-color: #FF6444;
   border-bottom-right-radius: 10px;
         cursor: pointer;
-  -webkit-box-shadow: 0px 10px 5px -2px rgba(124, 42, 42, 0.33);
-  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0px 5px 5px -2px rgba(124, 42, 42, 0.33);
+  -moz-box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.33);
   -webkit-transition: box-shadow 1s ease-in;
   -moz-transition: box-shadow 1s ease-in;
   -o-transition: box-shadow 1s ease-in;
@@ -438,7 +438,7 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55) inset
 }
 
 .completed {
-  padding: 4px 0 0 4px;
+  padding: 4px 0 0 34px;
   font-size: 18px;
   font-weight: 900;
 }
@@ -492,6 +492,18 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55), 0 0 40px rgba(0, 0, 0, 0.55) inset;
   -webkit-box-shadow:0 0 2px rgba(0,0,0,0.6);
 -moz-box-shadow:0 0 2px rgba(0,0,0,0.6);
 box-shadow:0 0 2px rgba(0,0,0,0.6);
+}
+
+.stats:hover {
+    background-color: rgb(248, 84, 51);
+}
+
+.date:hover {
+    background-color:rgb(51, 51, 51) ;
+}
+.place:hover {
+    color: black;
+  background-color: #FF6444;
 }
 
 </style>

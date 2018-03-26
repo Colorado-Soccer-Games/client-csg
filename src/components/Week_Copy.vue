@@ -3,175 +3,222 @@
     <div class="labelwrap">
       <div id="Monday">
       <h1>MONDAY</h1>
-            <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Monday'">
-              <span>
-                <h2> {{ field.location }} </h2>
-                  <!-- <img class=" float icon" src="@/assets/normal.png"/> -->
-                  <br>
-                <h3> {{ field.city }} </h3>
-                <div class="deets">
-                  <!-- <img class="icon" src="@/assets/dirt.png"/>
-                  <img class="icon" src="@/assets/netless.png"/>
-                  <img class="icon" src="@/assets/night.png"/>
-                  <br>
-                  <img class="icon" src="@/assets/lights.png"/>
-                  <img class="icon" src="@/assets/water.png"/> -->
-                </div>
-                <div class="card-buttons">
-                  <h4>Total:</h4> <span> </span>
-                  <br>
-                  <button> Join </button>
-                </div>
-              </span>
-            </div>
+         <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Monday'">
+        <span>
+        <h2> {{ field.location }} </h2>
+        <br>
+        <h3> {{ field.city }} </h3>
+        <div class="field-deets">
+          <p class="label-data"><span class="label">Time: </span>{{field.time}}</p>
+          <p class="label-data"><span class="label">Level: </span>{{field.level}}</p>
+          <p class="label-data"><span class="label">Field: </span>{{field.surface}}</p>
+          <p class="label-data"><span class="label">Goals: </span>{{field.goals}}</p>
+        </div>
+        <div class="deets">
+          <div class="split-left">
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_parking}}</p>
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_parking}}</p>
+          </div >
+          <div class="split-right">
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+          </div>
+        </div>
+        <div class="card-buttons">
+          <h4>Total:</h4> <span>{{field.stats_player_count}} </span>
+          <br>
+          <button> Join </button>
+        </div>
+        </span>
+        </div>
       </div>
       <div id="Tuesday">
       <h1>TUESDAY</h1>
-            <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Tuesday'">
-              <span>
-                <h2> {{ field.location }} </h2>
-                  <!-- <img class=" float icon" src="@/assets/normal.png"/> -->
-                  <br>
-                <h3> {{ field.city }} </h3>
-                <div class="deets">
-                  <!-- <img class="icon" src="@/assets/dirt.png"/>
-                  <img class="icon" src="@/assets/netless.png"/>
-                  <img class="icon" src="@/assets/night.png"/>
-                  <br>
-                  <img class="icon" src="@/assets/lights.png"/>
-                  <img class="icon" src="@/assets/water.png"/> -->
-                </div>
-                <div class="card-buttons">
-                  <h4>Total:</h4> <span> </span>
-                  <br>
-                  <button> Join </button>
-                </div>
-              </span>
-            </div>
+         <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Tuesday'">
+        <span>
+        <h2> {{ field.location }} </h2>
+        <br>
+        <h3> {{ field.city }} </h3>
+        <div class="field-deets">
+          <p class="label-data"><span class="label">Time: </span>{{field.time}}</p>
+          <p class="label-data"><span class="label">Level: </span>{{field.level}}</p>
+          <p class="label-data"><span class="label">Field: </span>{{field.surface}}</p>
+          <p class="label-data"><span class="label">Goals: </span>{{field.goals}}</p>
+        </div>
+        <div class="deets">
+          <div class="split-left">
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_parking}}</p>
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_parking}}</p>
+          </div >
+          <div class="split-right">
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+          </div>
+        </div>
+        <div class="card-buttons">
+          <h4>Total:</h4> <span>{{field.stats_player_count}} </span>
+          <br>
+          <button> Join </button>
+        </div>
+        </span>
+        </div>
       </div>
       <div id="Wednesday">
       <h1>WEDNESDAY</h1>
-              <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Wednesday'">
-              <span>
-                <h2> {{ field.location }} </h2>
-                  <!-- <img class=" float icon" src="@/assets/normal.png"/> -->
-                  <br>
-                <h3> {{ field.city }} </h3>
-                <div class="deets">
-                  <!-- <img class="icon" src="@/assets/dirt.png"/>
-                  <img class="icon" src="@/assets/netless.png"/>
-                  <img class="icon" src="@/assets/night.png"/>
-                  <br>
-                  <img class="icon" src="@/assets/lights.png"/>
-                  <img class="icon" src="@/assets/water.png"/> -->
-                </div>
-                <div class="card-buttons">
-                  <h4>Total:</h4> <span> </span>
-                  <br>
-                  <button> Join </button>
-                </div>
-              </span>
-            </div>
+          <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Wednesday'">
+        <span>
+        <h2> {{ field.location }} </h2>
+        <br>
+        <h3> {{ field.city }} </h3>
+        <div class="field-deets">
+          <p class="label-data"><span class="label">Time: </span>{{field.time}}</p>
+          <p class="label-data"><span class="label">Level: </span>{{field.level}}</p>
+          <p class="label-data"><span class="label">Field: </span>{{field.surface}}</p>
+          <p class="label-data"><span class="label">Goals: </span>{{field.goals}}</p>
+        </div>
+        <div class="deets">
+          <div class="split-left">
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_parking}}</p>
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_parking}}</p>
+          </div >
+          <div class="split-right">
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+          </div>
+        </div>
+        <div class="card-buttons">
+          <h4>Total:</h4> <span>{{field.stats_player_count}} </span>
+          <br>
+          <button> Join </button>
+        </div>
+        </span>
+        </div>
       </div>
       <div id="Thursday">
       <h1>THURSDAY</h1>
             <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Thursday'">
-            <span>
-              <h2> {{ field.location }} </h2>
-                <!-- <img class=" float icon" src="@/assets/normal.png"/> -->
-                <br>
-              <h3> {{ field.city }} </h3>
-              <div class="deets">
-                <!-- <img class="icon" src="@/assets/dirt.png"/>
-                <img class="icon" src="@/assets/netless.png"/>
-                <img class="icon" src="@/assets/night.png"/>
-                <br>
-                <img class="icon" src="@/assets/lights.png"/>
-                <img class="icon" src="@/assets/water.png"/> -->
-              </div>
-              <div class="card-buttons">
-                <h4>Total:</h4> <span> </span>
-                <br>
-                <button> Join </button>
-              </div>
-            </span>
+        <span>
+        <h2> {{ field.location }} </h2>
+        <br>
+        <h3> {{ field.city }} </h3>
+        <div class="field-deets">
+          <p class="label-data"><span class="label">Time: </span>{{field.time}}</p>
+          <p class="label-data"><span class="label">Level: </span>{{field.level}}</p>
+          <p class="label-data"><span class="label">Field: </span>{{field.surface}}</p>
+          <p class="label-data"><span class="label">Goals: </span>{{field.goals}}</p>
+        </div>
+        <div class="deets">
+          <div class="split-left">
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_parking}}</p>
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_parking}}</p>
+          </div >
+          <div class="split-right">
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
           </div>
-
+        </div>
+        <div class="card-buttons">
+          <h4>Total:</h4> <span>{{field.stats_player_count}} </span>
+          <br>
+          <button> Join </button>
+        </div>
+        </span>
+        </div>
       </div>
       <div id="Friday">
       <h1>FRIDAY</h1>
-                <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Friday'">
-              <span>
-                <h2> {{ field.location }} </h2>
-                  <!-- <img class=" float icon" src="@/assets/normal.png"/> -->
-                  <br>
-                <h3> {{ field.city }} </h3>
-                <div class="deets">
-                  <!-- <img class="icon" src="@/assets/dirt.png"/>
-                  <img class="icon" src="@/assets/netless.png"/>
-                  <img class="icon" src="@/assets/night.png"/>
-                  <br>
-                  <img class="icon" src="@/assets/lights.png"/>
-                  <img class="icon" src="@/assets/water.png"/> -->
-                </div>
-                <div class="card-buttons">
-                  <h4>Total:</h4> <span> </span>
-                  <br>
-                  <button> Join </button>
-                </div>
-              </span>
-            </div>
+             <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Friday'">
+        <span>
+        <h2> {{ field.location }} </h2>
+        <br>
+        <h3> {{ field.city }} </h3>
+        <div class="field-deets">
+          <p class="label-data"><span class="label">Time: </span>{{field.time}}</p>
+          <p class="label-data"><span class="label">Level: </span>{{field.level}}</p>
+          <p class="label-data"><span class="label">Field: </span>{{field.surface}}</p>
+          <p class="label-data"><span class="label">Goals: </span>{{field.goals}}</p>
+        </div>
+        <div class="deets">
+          <div class="split-left">
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_parking}}</p>
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_parking}}</p>
+          </div >
+          <div class="split-right">
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+          <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+          </div>
+        </div>
+        <div class="card-buttons">
+          <h4>Total:</h4> <span>{{field.stats_player_count}} </span>
+          <br>
+          <button> Join </button>
+        </div>
+        </span>
+        </div>
       </div>
       <div id="Saturday">
       <h1>SATURDAY</h1>
-                <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Saturday'">
-              <span>
-                <h2> {{ field.location }} </h2>
-                  <!-- <img class=" float icon" src="@/assets/normal.png"/> -->
-                  <br>
-                <h3> {{ field.city }} </h3>
-                <div class="deets">
-                  <!-- <img class="icon" src="@/assets/dirt.png"/>
-                  <img class="icon" src="@/assets/netless.png"/>
-                  <img class="icon" src="@/assets/night.png"/>
-                  <br>
-                  <img class="icon" src="@/assets/lights.png"/>
-                  <img class="icon" src="@/assets/water.png"/> -->
-                </div>
-                <div class="card-buttons">
-                  <h4>Total:</h4> <span> </span>
-                  <br>
-                  <button> Join </button>
-                </div>
-              </span>
+        <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Saturday'">
+        <span>
+        <h2> {{ field.location }} </h2>
+        <br>
+        <h3> {{ field.city }} </h3>
+        <div class="field-deets">
+          <p class="label-data"><span class="label">Time: </span>{{field.time}}</p>
+          <p class="label-data"><span class="label">Level: </span>{{field.level}}</p>
+          <p class="label-data"><span class="label">Field: </span>{{field.surface}}</p>
+          <p class="label-data"><span class="label">Goals: </span>{{field.goals}}</p>
+        </div>
+        <div class="deets">
+            <div class="split-left">
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_parking}}</p>
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_parking}}</p>
+            </div >
+            <div class="split-right">
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
             </div>
+        </div>
+        <div class="card-buttons">
+          <h4>Total:</h4> <span>{{field.stats_player_count}} </span>
+          <br>
+          <button> Join </button>
+        </div>
+        </span>
+        </div>
 
       </div>
       <div id="Sunday">
       <h1>SUNDAY</h1>
-                <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Sunday'">
-              <span>
-                <h2> {{ field.location }} </h2>
-              <div v-html="iconSwitcher">
-              </div>
-                  <!-- <img class="float icon" src="@/assets/normal.png"/> -->
-                  <br>
-                <h3> {{ field.city }} </h3>
-                <div class="deets">
-                  <!-- <img class="icon" src="@/assets/dirt.png"/>
-                  <img class="icon" src="@/assets/netless.png"/>
-                  <img class="icon" src="@/assets/night.png"/>
-                  <br>
-                  <img class="icon" src="@/assets/lights.png"/>
-                  <img class="icon" src="@/assets/water.png"/> -->
-                </div>
-                <div class="card-buttons">
-                  <h4>Total:</h4> <span> </span>
-                  <br>
-                  <button> Join </button>
-                </div>
-              </span>
-            </div>
+          <div class="card" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Sunday'">
+        <span>
+        <h2> {{ field.location }} </h2>
+        <br>
+        <h3> {{ field.city }} </h3>
+        <div class="field-deets">
+          <p class="label-data"><span class="label">Time: </span>{{field.time}}</p>
+          <p class="label-data"><span class="label">Level: </span>{{field.level}}</p>
+          <p class="label-data"><span class="label">Field: </span>{{field.surface}}</p>
+          <p class="label-data"><span class="label">Goals: </span>{{field.goals}}</p>
+        </div>
+        <div class="deets">
+          <div class="split-left">
+              <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_parking}}</p>
+              <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_parking}}</p>
+          </div >
+          <div class="split-right">
+              <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+              <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
+          </div>
+        </div>
+        <div class="card-buttons">
+          <h4>Total:</h4> <span>{{field.stats_player_count}} </span>
+          <br>
+          <button> Join </button>
+        </div>
+        </span>
+        </div>
+
       </div>
     </div>
     <br>
@@ -199,31 +246,6 @@ export default {
           // console.log(data);
         })
     }
-  },
-  computed: {
-    iconSwitcher () {
-      var allIcons = []
-      var allKeys = Object.keys(this.data.games[0])
-      // each key in a  a game
-      allKeys.forEach(key => {
-        console.log(key)
-             console.log(this.data.games[0][key])
-        switch (this.data.games[0][key]) {
-
-          // TIME
-          case 'Morning':
-            allIcons.push('<img class="float icon" src="../../static/morning.png"/>')
-          // eslint-disable-next-line
-          case 'Day':
-            allIcons.push('<img class="float icon" src="../../static/day.png"/>')
-          // eslint-disable-next-line
-          case 'Night':
-            allIcons.push('<img class="float icon" src="../../static/night.png"/>')
-        }
-      })
-      console.log(allIcons)
-      return allIcons.join()
-    }
   }
 }
 </script>
@@ -236,18 +258,43 @@ export default {
   font-family: "Lato", sans-serif;
   /* width: 100vw; */
   /* margin: 1rem; */
-}
+}7
 
 .card {
   color: #222222;
   background-color: #dcdada;
   width: 120px;
   border-radius: 1px;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 4px solid white;
+  border-right: 4px solid rgb(199, 198, 198);
   margin-top: 20px;
-  max-height: 140px;
-  min-height: 140px;
+  max-height: 185px;
+  min-height: 185px;
+  border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 3px;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13),
+    0 0 40px rgba(0, 0, 0, 0.13) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13),
+    0 0 40px rgba(0, 0, 0, 0.13) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13) inset;
+}
+.card:hover {
+  color: #222222;
+  background-color: #b6b5b5;
+  width: 120px;
+  border-radius: 1px;
+  border-top: 4px solid white;
+  border-right: 4px solid rgb(199, 198, 198);
+  margin-top: 20px;
+  max-height: 185px;
+  min-height: 185px;
+  border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 3px;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13),
+    0 0 40px rgba(0, 0, 0, 0.13) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13),
+    0 0 40px rgba(0, 0, 0, 0.13) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.53) inset;
 }
 
 h1 {
@@ -267,7 +314,7 @@ h1 {
 }
 
 h2 {
-  font-size: 10px;
+  font-size: 11px;
   display: inline;
   color: #222222;
   padding-left: 2px;
@@ -278,7 +325,7 @@ h3 {
   /* display: inline; */
   color: #222222;
   padding-left: 2px;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   margin-top: 10px;
   font-weight: 200;
 }
@@ -299,11 +346,39 @@ h4 {
 }
 .deets {
   /* margin-top:10px; */
-  background-color: #222222;
-  padding-left: 2px;
+  background-color: #424242;
+  /* padding-left: 2px; */
+  padding-top:5px;
+    padding-bottom:5px;
   border-radius: 1px;
   padding-top: 4px;
   width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  float:left;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33),
+    0 0 40px rgba(0, 0, 0, 0.33) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33),
+    0 0 40px rgba(0, 0, 0, 0.33) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33) inset;
+}
+.split-right {
+/* display: flex;
+flex-direction: column; */
+}
+
+.field-deets {
+  /* margin-top:10px; */
+  border-top: 4px #aaa solid;
+  background-color: white;
+  padding-left: 2px;
+  padding-top:5px;
+    padding-bottom:5px;
+  border-radius: 1px;
+  padding-top: 4px;
+  /* width: 100%; */
+  color: #222;
 }
 
 .card-buttons {
@@ -312,13 +387,19 @@ h4 {
   justify-content: space-between;
   /* padding: 2px; */
   width: 100%;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33),
+    0 0 40px rgba(0, 0, 0, 0.33) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33),
+    0 0 40px rgba(0, 0, 0, 0.33) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33) inset;
 }
 button {
   background-color: #222222;
   color: white;
   border: none;
-  height: 20px;
+  height: 35px;
   width: 40px;
+    border-top-left-radius: 5px;
 }
 
 button:hover {
@@ -361,5 +442,37 @@ button:hover {
 }
 #Saturday {
   background-color: #383838;
+}
+.label {
+  font-weight: 400;
+  color:rgb(80, 79, 79);
+}
+
+.label-field {
+  font-size: 12px;
+  padding-left: 2px;
+  color:white;
+      font-weight: 300;
+}
+
+.label-data {
+  font-size: 12px;
+  padding-left: 2px;
+  color:black;
+    font-weight: 100;
+}
+
+.label-info {
+  font-size: 12px;
+  padding-left: 2px;
+  color:#aaa;
+      font-weight: 100;
+}
+
+.bleh {
+  min-height: 10px;
+  max-height: 10px;
+  min-width: 10px;
+  max-width: 10px;
 }
 </style>
