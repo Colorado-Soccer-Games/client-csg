@@ -1,27 +1,42 @@
-# test
+# Colorado Soccer Games - Web Application
 
-https://github.com/bencasalino/ben-client
-https://github.com/bencasalino/ben-server
+### Author **Ben Csasalino**
+### Contact **BenCasalino@gmail.com**
 
-Project Proposal:
-https://docs.google.com/document/d/1tby-utWMBLCLgv7-KoaMkgL3LlbPlMnY6C_r9Xs-al8/
+This is a directory containting all Colorado indoor/outdoor soccer facilities information.
 
-Vue Calendar Component:
-https://devarchy.com/vue/vue-event-calendar
+## Display Chart Section
+* Displays total fields based on indoor or outdoor.
+## Form Section
+* Functionality for Create, Read, Update and Delete for both indoor and outdoor fields interacting with the database.
+## App Layout
+![Layout of the Website](Layout.png)
 
-Slideshow Presentation:
+- Link to: [Deployed front-end URL](soccer-directory-colorado.firebaseapp.com)
+- Link to: [Code Frontend Repo](https://github.com/bencasalino/BenCasalino-Portfolio/)
 
-Your app should:
-* Have a working front-end and back-end
-* Use a single-page app framework for the front-end or native framework (iOS, Android)
-* Persist data on the back-end
-	* Could be PostgreSQL, MySQL, Mongo, Redis, etc.
-* Look decent - either using custom CSS or a CSS Framework
-* Use some significant technology that was not covered in the program. Examples include:
-	* Using a different Front End Framework from the one you learned originally
-	* Making a native mobile app using a wrapper like ionic framework/React Native/PhoneGap/Cordova etc.
-	* Making a desktop app with Electron/React Native Desktop etc.
-	* Integrating a physical device/sensor/internet of things
-	* Using Rails, Spring, Java, or some other backend framework for building APIs
-	* A complex API integration: Twilio, Sockets.io, etc
-* Be deployed and ready to demo by the provided deadline
+- Link to: [Deployed back-end URL](dbsfdoc.herokuapp.com)
+- Link to: [Code Backend Repo](https://github.com/bencasalino/sfdoc-server)
+
+# Legal
+Copyright (c) 2018 **_Benjamin M. Casalino_**
+
+This software is licensed under the MIT license.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
