@@ -1,19 +1,19 @@
 <template>
-  <div id="EntireApplicationWrapper">
+  <div id='EntireApplicationWrapper'>
     <Header/>
-    <div class="Wrapper">
+    <div class='Wrapper'>
     <About/>
     <Create/>
     </div>
     <LegendText/>
-    <div class="WeekWrapper">
+    <div class='WeekWrapper'>
       <Week/>
   </div>
-      <div class="AllGamesWrapper">
+      <div class='AllGamesWrapper'>
   </div>
   <Map/>
   <MapFields/>
-      <div class="GamesWrapper">
+      <div class='GamesWrapper'>
   <Edit/>
   <AllCreatedGames/>
 </div>
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-// sample image path <img src="./assets/logo.png">
+// sample image path <img src='./assets/logo.png'>
 // Components
 import Header from '@/components/Header'
 import Create from '@/components/Create'
@@ -142,12 +142,10 @@ border-spacing: 0;
 .WeekWrapper {
   display: flex;
   flex-flow: row nowrap;
-
 }
 
 .GamesWrapper {
     display: flex;
     justify-content: center;
-
 }
 </style>

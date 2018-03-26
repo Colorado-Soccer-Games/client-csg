@@ -31,19 +31,19 @@
             <br>
             <h3>Start Time: </h3>
             <br>
-            <input v-model="TimeSelection" type="radio" name="time-selection" checked="checked">
+            <input v-model="TimeSelection" type="radio" name="time_selection" checked="checked">
             <span>
             <img class="time--icon" src="../../static/morning.png"/>
             <span>Morning</span>
             </span>
             <br>
-            <input v-model="TimeSelection" type="radio" name="time-selection">
+            <input v-model="TimeSelection" type="radio" name="time_selection">
             <span>
            <img class="time--icon" src="../../static/day.png"/>
             <span>Day</span>
             </span>
             <br>
-                  <input v-model="TimeSelection" type="radio" name="time-selection">
+                  <input v-model="TimeSelection" type="radio" name="time_selection">
                     <span>
                     <img class="time--icon" src="../../static/night.png"/>
                       <span>Night</span>

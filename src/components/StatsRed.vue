@@ -104,7 +104,6 @@
 </span>
 </div>
 
-
 <div class="flexy">
 <span class="lab1">Boulder Indoor
 </span>
@@ -252,8 +251,6 @@ padding-top: 4px;
   border-right: 4px solid rgb(199, 198, 198);
   color: #dcdada;
 }
-
-
 .data {
   color: #222222;
   background-color: #dcdada;
@@ -382,9 +379,6 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55) inset
   padding: 4px 0 0 3px;
 }
 
-/* .time{
-padding: 2px 0 10px 3px;
-} */
 .surface {
   border-top: 2px #dcdada solid;
   padding: 4px 0 0 4px;
@@ -499,6 +493,5 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55), 0 0 40px rgba(0, 0, 0, 0.55) inset;
 -moz-box-shadow:0 0 2px rgba(0,0,0,0.6);
 box-shadow:0 0 2px rgba(0,0,0,0.6);
 }
-
 
 </style>

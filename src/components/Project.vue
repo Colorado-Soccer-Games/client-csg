@@ -47,7 +47,7 @@
 <h1 class="wow animated slideInDown">SET TEXT UPDATES</h1>
 <p class="desc animated wow fadeIn">Enter a phone number to receive SMS reminders/cancellations.</p>
 <br>
-<h6> CREATE/HOST A GAME <img class="arrow" src="../../static/darkgrey.png" alt=""></h6>
+<h6 class="animated slideInDown"> CREATE/HOST A GAME <img class="arrow" src="../../static/darkgrey.png" alt=""></h6>
 <p class="greeny animated wow fadeIn">Don't see a game in your vicinity? Use the form to create one!</p>
 </div>
 </div>

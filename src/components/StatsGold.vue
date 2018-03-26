@@ -104,7 +104,6 @@
 </span>
 </div>
 
-
 <div class="flexy">
 <span class="lab1"> Ft. Collins Field
 </span>
@@ -254,7 +253,6 @@ padding-top: 4px;
   color: #222222;
 }
 
-
 .data {
   color: #222222;
   background-color: #dcdada;
@@ -312,12 +310,10 @@ h2 {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.43) inset;
 }
 .FullGameInfoCard {
-
   display: flex;
   margin-bottom: 2rem;
   /* border: 2px #dcdada solid; */
 }
-
 
 .inline-column {
   display: flex;
@@ -384,9 +380,6 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55) inset
   padding: 4px 0 0 3px;
 }
 
-/* .time{
-padding: 2px 0 10px 3px;
-} */
 .surface {
   border-top: 2px #dcdada solid;
   padding: 4px 0 0 4px;
@@ -486,11 +479,6 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55), 0 0 40px rgba(0, 0, 0, 0.55) inset;
   font-weight: 900;
 }
 
-.row {
-  /* display: flex;
-  flex-direction: row; */
-}
-
 .highlight {
   background-color: black;
   color:#dcdada;
@@ -501,6 +489,5 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.55), 0 0 40px rgba(0, 0, 0, 0.55) inset;
 -moz-box-shadow:0 0 2px rgba(0,0,0,0.6);
 box-shadow:0 0 2px rgba(0,0,0,0.6);
 }
-
 
 </style>
