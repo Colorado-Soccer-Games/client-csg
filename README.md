@@ -1,24 +1,45 @@
 # Colorado Soccer Games - Web Application
+* Web application for the people of Colorado to help organize & track data of active pick-up soccer games across the state.
 
 ### Author **Ben Csasalino**
 ### Contact **BenCasalino@gmail.com**
 
-This is a directory containting all Colorado indoor/outdoor soccer facilities information.
+## Create Games Section
+* Form to create and schedule a game.
 
-## Display Chart Section
-* Displays total fields based on indoor or outdoor.
-## Form Section
-* Functionality for Create, Read, Update and Delete for both indoor and outdoor fields interacting with the database.
+## Weekly Games Section
+* Shows what games are created for each day.
+
+## Text Updates Games Section
+* Section to enter phone number and recieve updates.
+
+## Map Section
+* Shows a map with markers for all scheduled games.
+
+## All Games Section
+* Displays all currently created games.
+
+## Data - 1 Weekly Stats
+* Displays game amounts per day of week.
+
+## Data - 2 Most Popular Fields
+* Displays total players per game.
+
+## Data - 3 Most Active Games
+* Displays total games completed.
+
 ## App Layout
 ![Layout of the Website](Layout.png)
 
-- Link to: [Deployed front-end URL](soccer-directory-colorado.firebaseapp.com)
-- Link to: [Code Frontend Repo](https://github.com/bencasalino/BenCasalino-Portfolio/)
+- Link to: [Deployed front-end URL](https://coloradosoccergames.today/)
+- Link to: [Code Frontend Repo](https://github.com/Colorado-Soccer-Games/client-csg)
 
-- Link to: [Deployed back-end URL](dbsfdoc.herokuapp.com)
-- Link to: [Code Backend Repo](https://github.com/bencasalino/sfdoc-server)
+- Link to: [Deployed back-end URL](https://protected-meadow-94841.herokuapp.com/)
+- Link to: [Code Backend Repo](https://github.com/Colorado-Soccer-Games/server-csg)
 
-# Legal
+## Tech Used
+* VueJS, Javascript, SASS, Twilio, CSS, Knex, PostgreSQL, Postman, Node, Adobe Creative Suite, Express, Firebase, Heroku, Git/Github, Chart.js, Mocha, Chai, Agile
+## Legal
 Copyright (c) 2018 **_Benjamin M. Casalino_**
 
 This software is licensed under the MIT license.
