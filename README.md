@@ -1,32 +1,32 @@
 # Colorado Soccer Games - Web Application
-* Web application for the people of Colorado to help organize & track data of active pick-up soccer games across the state.
+Web application for the people of Colorado to help organize & track data of active pick-up soccer games across the state.
 
 ### Author **Ben Csasalino**
 ### Contact **BenCasalino@gmail.com**
 
 ## Create Games Section
-* Form to create and schedule a game.
+Form to create and schedule a game.
 
 ## Weekly Games Section
-* Shows what games are created for each day.
+Shows what games are created for each day.
 
 ## Text Updates Games Section
-* Section to enter phone number and recieve updates.
+Section to enter phone number and recieve updates.
 
 ## Map Section
-* Shows a map with markers for all scheduled games.
+Shows a map with markers for all scheduled games.
 
 ## All Games Section
-* Displays all currently created games.
+Displays all currently created games.
 
 ## Data - 1 Weekly Stats
-* Displays game amounts per day of week.
+Displays game amounts per day of week.
 
 ## Data - 2 Most Popular Fields
-* Displays total players per game.
+Displays total players per game.
 
 ## Data - 3 Most Active Games
-* Displays total games completed.
+Displays total games completed.
 
 ## App Layout
 ![Layout of the Website](Layout.png)
@@ -38,7 +38,7 @@
 - Link to: [Code Backend Repo](https://github.com/Colorado-Soccer-Games/server-csg)
 
 ## Tech Used
-* VueJS, Javascript, SASS, Twilio, CSS, Knex, PostgreSQL, Postman, Node, Adobe Creative Suite, Express, Firebase, Heroku, Git/Github, Chart.js, Mocha, Chai, Agile
+VueJS, Javascript, SASS, Twilio, CSS, Knex, PostgreSQL, Postman, Node, Adobe Creative Suite, Express, Firebase, Heroku, Git/Github, Chart.js, Mocha, Chai, Agile
 ## Legal
 Copyright (c) 2018 **_Benjamin M. Casalino_**
 
