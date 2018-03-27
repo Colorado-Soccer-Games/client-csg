@@ -21,9 +21,11 @@
                 </div>
               </div>
               <div class="card-buttons">
-                <h4>Total:</h4> <span>{{field.stats_player_count}} </span>
+                <!-- <h4>Total:</h4> <span>{{field.stats_player_count}} </span> -->
+                <h4>Total:</h4> <span> {{count}} </span>
                 <br>
-                <button> Join </button>
+                <button class="join" v-on:click="countUp"> Join </button>
+                <button class="save" v-on:click="countUp"> Save </button>
               </div>
           </span>
   </div>
@@ -38,6 +40,37 @@ export default {
   props: ['field']
 }
 </script>
+
+// export default {
+//   name: 'Card',
+//   data () {
+//     return {
+//       data: [],
+//       count: 1
+//     }
+//   },
+//   mounted () {
+//     this.load()
+//   },
+//   methods: {
+//     load () {
+//       fetch('http://localhost:3000/')
+//         .then(res => res.json())
+//         .then(data => {
+//           this.data = data
+//           // console.log(data);
+//         })
+//     },
+//     countUp: function () {
+//       this.count += 1
+//     }
+//   },
+//   components: {
+//     Card
+//   }
+// }
+
+
 <style scoped>
 
 .card {
@@ -110,11 +143,11 @@ h3 {
   font-weight: 200;
 }
 h4 {
-  font-size: 12px;
+  font-size: 10px;
   display: inline;
   color: #222222;
   padding-left: 2px;
-  font-weight: 100;
+  font-weight: 900;
 }
 
 .icon {
@@ -177,8 +210,8 @@ button {
   background-color: #222222;
   color: white;
   border: none;
-  height: 35px;
-  width: 40px;
+  height: 30px;
+  width: 37px;
     border-top-left-radius: 5px;
 }
 
@@ -187,6 +220,19 @@ button:hover {
   color: #222222;
   border: none;
   cursor: pointer;
+}
+
+.join {
+  color: white;
+      margin-left: 20px;
+          border-top-right-radius: 5px;
+          /* border-bottom-left-radius: 5px; */
+
+}
+
+.save {
+  background-color: #424242;
+  color: white;
 }
 
 .labelwrap {

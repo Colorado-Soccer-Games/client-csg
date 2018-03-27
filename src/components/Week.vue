@@ -46,16 +46,15 @@
         <Card class="card"
                :field="field"
                v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Saturday'">
-
-           <button v-on:click="countUp"> Join </button>
-           <p>{{count}}</p>
       </Card>
       </div>
       <div id="Sunday">
       <h1>SUNDAY</h1>
-          <Card class="card"
-                 :field="field"
-                 v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Sunday'">
+      <Card class="card"
+                :field="field"
+                v-bind:key="field.games"
+                v-for="field in data.games"
+                v-if="field.day == 'Sunday'">
 
       </Card>
       </div>
@@ -67,16 +66,14 @@
 </template>
 
 <script>
-
 import Card from '@/components/Card'
 
-// more needed for importing card?
 export default {
   name: 'Week',
   data () {
     return {
       data: [],
-      count: 1
+      // count: 1
     }
   },
   mounted () {
@@ -91,9 +88,9 @@ export default {
           // console.log(data);
         })
     },
-    countUp: function () {
-      this.count += 1
-    }
+    // countUp: function () {
+    //   this.count += 1
+    // }
   },
   components: {
     Card

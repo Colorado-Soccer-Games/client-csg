@@ -179,14 +179,15 @@ export default {
     return {
       baseURL: 'http://localhost:3000/games',
       CreatedGame: {
-        // location: '',
-        // city: '',
-        // FieldType: ''
-        // FieldInfo: [],
-        // DaySelection: [],
-        // TimeSelction: [],
-        // FieldType: [],
-        // GoalSelection: []
+        location: '',
+        city: '',
+        FieldType: '',
+        FieldInfo: '',
+        FieldInfo: '',
+        DaySelection: '',
+        TimeSelction: '',
+        FieldType: '',
+        GoalSelection: ''
       }
     }
   },
