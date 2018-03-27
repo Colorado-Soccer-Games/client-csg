@@ -14,7 +14,7 @@
 <p class="info-text">All total game field details & relevant information. </p>
     <div class="coly-wrap">
       <div class="coly">
-              <h4>WEEKDAY:</h4>
+        <h4>WEEKDAY:</h4>
         <div class="flex">
         <h3>MONDAY:</h3> <span class="numb">2</span>
         </div>
@@ -50,6 +50,8 @@
         </div>
     </div>
     </div>
+    <br>
+<p class="info-text">Data combined total of all the relevant field details. </p>
   <div class="coly-wrap">
         <div class="coly">
             <h4>TYPES:</h4>
@@ -66,8 +68,7 @@
                 <img class="iconz" src="../../static/full_concrete.png"/> <span class="numb">3</span>
             </div>
         </div>
-
-        <div class="coly">
+         <div class="coly">
             <h4>DETAILS:</h4>
             <div class="flex">
                 <img class="iconz" src="../../static/full_parking.png"/> &nbsp;&nbsp;<span class="numb">9</span>
@@ -81,6 +82,19 @@
                 <div class="flex">
                 <img class="iconz" src="../../static/full_lights.png"/> &nbsp;&nbsp;<span class="numb">3</span>
             </div>
+        </div>
+
+        <div class="coly">
+            <h4>GOALS:</h4>
+            <div class="flex">
+                <img class="iconz" src="../../static/full_full.png"/> &nbsp;&nbsp;<span class="numb">11</span>
+                </div>
+                <div class="flex">
+                <img class="iconz" src="../../static/full_netless.png"/> &nbsp;&nbsp; <span class="numb">8</span>
+                </div>
+                <div class="flex">
+                <img class="iconz" src="../../static/full_none.png"/> &nbsp;&nbsp;<span class="numb">6</span>
+                </div>
         </div>
   </div>
       <span><img class="logo animated slideInLeft" src="../../static/grey.png">

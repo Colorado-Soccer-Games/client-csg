@@ -41,40 +41,41 @@
             <br>
             <h3>Start Time: </h3>
             <br>
-            <input v-model="TimeSelection" type="radio" name="time_selection" checked="checked">
+            <input v-model="TimeSelection" type="radio" name="time_selection" checked="checked" value="morning">
             <span>
             <img class="time--icon" src="../../static/morning.png"/>
             <span>Morning</span>
             </span>
             <br>
-            <input v-model="TimeSelection" type="radio" name="time_selection">
+            <input v-model="TimeSelection" type="radio" name="time_selection" value="day">
             <span>
            <img class="time--icon" src="../../static/day.png"/>
             <span>Day</span>
             </span>
             <br>
-                  <input v-model="TimeSelection" type="radio" name="time_selection">
+                  <input v-model="TimeSelection" type="radio" name="time_selection" value="night">
                     <span>
                     <img class="time--icon" src="../../static/night.png"/>
                       <span>Night</span>
                       </span>
+
                       <br>
                       <br>
                       <h3>Skill Level: </h3>
                       <br>
-                      <input type="radio" name="difficulty-selection" checked="checked">
+                      <input type="radio" name="difficulty-selection" checked="checked" value="open">
                       <span>
-                                 <img class="time--icon" src="../../static/open.png"/>
+                      <img class="time--icon" src="../../static/open.png"/>
                       <span>Open</span>
                       </span>
                       <br>
-                      <input type="radio" name="difficulty-selection">
+                      <input type="radio" name="difficulty-selection" value="normal">
                       <span>
-                                 <img class="time--icon" src="../../static/normal.png"/>
+                      <img class="time--icon" src="../../static/normal.png"/>
                       <span>Normal</span>
                       </span>
                       <br>
-                      <input type="radio" name="difficulty-selection">
+                      <input type="radio" name="difficulty-selection" value="competitive">
                       <span>
                               <img class="time--icon" src="../../static/competitive.png"/>
                       <span>Competitive</span>
@@ -85,7 +86,7 @@
                 <div class="right">
                   <h3>Field Details: </h3>
                       <br>
-                      <input v-model="FieldInfo" type="checkbox" name="field_restrooms">
+                      <input v-model="FieldInfo" type="checkbox" name="field_restrooms" value="restrooms">
                       <span>
                       <img class="time--icon" src="@/assets/restrooms.png"/>
                       <span>Restrooms</span>
@@ -93,17 +94,17 @@
                       <br>
                       <input v-model="FieldInfo" type="checkbox" name="field_water">
                       <span>
-                      <img class="time--icon" src="@/assets/water.png"/>
+                      <img class="time--icon" src="@/assets/water.png" value="water"/>
                       <span>Water</span>
                       </span>
                       <br>
-                      <input v-model="FieldInfo" type="checkbox" name="field_lights">
+                      <input v-model="FieldInfo" type="checkbox" name="field_lights" value="lights">
                       <span>
                       <img class="time--icon" src="@/assets/lights.png"/>
                       <span>Lights</span>
                       </span>
                       <br>
-                      <input v-model="FieldInfo" type="checkbox" name="field_parking">
+                      <input v-model="FieldInfo" type="checkbox" name="field_parking" value="parking">
                       <span>
                       <img class="time--icon" src="@/assets/parking.png"/>
                       <span>Parking</span>
@@ -112,19 +113,19 @@
                     <br>
                       <h3>Field Condition: </h3>
                       <br>
-                      <input v-model="GoalSelection" type="radio" name="goal-selection" checked="checked">
+                      <input v-model="GoalSelection" type="radio" name="goal-selection" checked="checked" value="full">
                       <span>
                       <img class="time--icon" src="../../static/full.png"/>
                       <span>Full</span>
                       </span>
                       <br>
-                      <input v-model="GoalSelection" type="radio" name="goal-selection">
+                      <input v-model="GoalSelection" type="radio" name="goal-selection" value="netless">
                       <span>
                       <img class="time--icon" src="../../static/netless.png"/>
                       <span>Netless</span>
                       </span>
                       <br>
-                      <input v-model="GoalSelection" type="radio" name="goal-selection">
+                      <input v-model="GoalSelection" type="radio" name="goal-selection" value="none">
                       <span>
                       <img class="time--icon" src="../../static/none.png"/>
                       <span>None</span>
@@ -133,25 +134,26 @@
                     <br>
                       <h3>Field Type: </h3>
                       <br>
-                      <input v-model="FieldType" type="radio" name="field-type" checked="checked">
+                      <input v-model="FieldType" type="radio" name="field-type" checked="checked"
+                      value="grass">
                       <span>
                         <img class="time--icon" src="../../static/grass.png"/>
                       <span>Grass</span>
                       </span>
                       <br>
-                      <input v-model="FieldType" type="radio" name="field-type">
+                      <input v-model="FieldType" type="radio" name="field-type" value="turf">
                       <span>
                         <img class="time--icon" src="../../static/turf.png"/>
                       <span>Turf</span>
                       </span>
                       <br>
-                      <input v-model="FieldType" type="radio" name="field-type">
+                      <input v-model="FieldType" type="radio" name="field-type" value="dirt">
                       <span>
                         <img class="time--icon" src="../../static/dirt.png"/>
                       <span>Dirt</span>
                       </span>
                       <br>
-                      <input v-model="FieldType" type="radio" name="field-type">
+                      <input v-model="FieldType" type="radio" name="field-type" value="concrete">
                       <span>
                         <img class="time--icon" src="../../static/concrete.png"/>
                       <span>Concrete</span>
@@ -180,14 +182,14 @@ export default {
       baseURL: 'http://localhost:3000/games',
       CreatedGame: {
         location: '',
-        city: '',
-        FieldType: '',
-        FieldInfo: '',
-        FieldInfo: '',
-        DaySelection: '',
-        TimeSelction: '',
-        FieldType: '',
-        GoalSelection: ''
+        city: ''
+        // FieldType: '',
+        // FieldInfo: '',
+        // FieldInfo: '',
+        // DaySelection: '',
+        // TimeSelction: '',
+        // FieldType: '',
+        // GoalSelection: ''
       }
     }
   },

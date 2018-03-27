@@ -21,10 +21,13 @@
                 </div>
               </div>
               <div class="card-buttons">
-                <!-- <h4>Total:</h4> <span>{{field.stats_player_count}} </span> -->
-                <h4>Total:</h4> <span> {{count}} </span>
-                <br>
-                <button class="join" v-on:click="countUp"> Join </button>
+                <!-- <button class="join" v-on:click="countUp"> Join </button>
+                <button class="save" v-on:click="countUp"> Save </button> -->
+                <div class="blimey">
+                <h4>Total:</h4>
+                <input disabled v-model='count' class="counter-style"> </input>
+                </div>
+             <button class="join" v-on:click="countUp"> Join </button>
                 <button class="save" v-on:click="countUp"> Save </button>
               </div>
           </span>
@@ -35,7 +38,22 @@
 export default {
   name: 'Card',
   data () {
-    return {}
+    return {
+     count: 1
+    }
+  },
+    mounted () {
+    this.load()
+    this.count = this.field.stats_player_count
+  },
+    methods: {
+      // put request
+      // this.count
+      // field @ field.id is what is being updated
+      // with the new count
+    countUp: function () {
+      this.count += 1
+    }
   },
   props: ['field']
 }
@@ -70,7 +88,6 @@ export default {
 //   }
 // }
 
-
 <style scoped>
 
 .card {
@@ -85,7 +102,7 @@ export default {
   min-height: 185px;
   border-bottom-right-radius: 5px;
     border-bottom-left-radius: 3px;
-      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13),
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13),
     0 0 40px rgba(0, 0, 0, 0.13) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13),
     0 0 40px rgba(0, 0, 0, 0.13) inset;
@@ -121,7 +138,6 @@ h1 {
   border-bottom: 3px solid #dcdada;
   color: #222222;
   font-weight: 900;
-  /* border-top-right-radius: 5px; */
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 10px;
 }
@@ -135,7 +151,6 @@ h2 {
 }
 h3 {
   font-size: 12px;
-  /* display: inline; */
   color: #222222;
   padding-left: 2px;
   margin-bottom: 8px;
@@ -158,11 +173,9 @@ h4 {
   float: right;
 }
 .deets {
-  /* margin-top:10px; */
   background-color: #424242;
-  /* padding-left: 2px; */
   padding-top:5px;
-    padding-bottom:5px;
+  padding-bottom:5px;
   border-radius: 1px;
   padding-top: 4px;
   width: 100%;
@@ -182,15 +195,13 @@ flex-direction: column; */
 }
 
 .field-deets {
-  /* margin-top:10px; */
   border-top: 4px #aaa solid;
   background-color: white;
   padding-left: 2px;
   padding-top:5px;
-    padding-bottom:5px;
+  padding-bottom:5px;
   border-radius: 1px;
   padding-top: 4px;
-  /* width: 100%; */
   color: #222;
 }
 
@@ -198,7 +209,6 @@ flex-direction: column; */
   padding-top: 10px;
   display: flex;
   justify-content: space-between;
-  /* padding: 2px; */
   width: 100%;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33),
     0 0 40px rgba(0, 0, 0, 0.33) inset;
@@ -224,10 +234,8 @@ button:hover {
 
 .join {
   color: white;
-      margin-left: 20px;
-          border-top-right-radius: 5px;
-          /* border-bottom-left-radius: 5px; */
-
+  margin-left: 20px;
+  border-top-right-radius: 5px;
 }
 
 .save {
@@ -300,5 +308,28 @@ button:hover {
   max-height: 10px;
   min-width: 10px;
   max-width: 10px;
+}
+.counter-style {
+  font-size: 14px;
+  padding-left: 10px;
+  color:#222;
+  background-color:#dcdada;
+  border: none;
+  max-width: 20px;
+}
+.counter-style:hover {
+  font-size: 14px;
+  padding-left: 10px;
+  color:#222;
+  background-color:#b6b5b5;
+  border: none;
+  max-width: 20px;
+}
+
+
+
+.blimey {
+display: flex;
+  flex-direction: column;
 }
 </style>
