@@ -29,14 +29,13 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: 'Card',
   data () {
     return {}
   },
-  props: ["field"]
+  props: ['field']
 }
 </script>
 <style scoped>

@@ -12,7 +12,9 @@
 <div class="right animated slideInUp">
 <h2>FIELD INFORMATION:</h2>
 <p class="info-text">All total game field details & relevant information. </p>
-      <h4>GAMES PER DAY</h4>
+    <div class="coly-wrap">
+      <div class="coly">
+              <h4>WEEKDAY:</h4>
         <div class="flex">
         <h3>MONDAY:</h3> <span class="numb">2</span>
         </div>
@@ -34,50 +36,59 @@
                 <div class="flex">
         <h3>SUNDAY:</h3> <span class="numb">6</span>
         </div>
+    </div>
+          <div class="coly">
+                  <h4>GAME LEVEL:</h4>
+        <div class="flex">
+        <h3>OPEN:</h3> <span class="numb">2</span>
+        </div>
+        <div class="flex">
+        <h3>NORMAL:</h3> <span class="numb">3</span>
+        </div>
+                <div class="flex">
+        <h3>COMPETITIVE:</h3> <span class="numb">3</span>
+        </div>
+    </div>
+    </div>
   <div class="coly-wrap">
         <div class="coly">
-        <h4>FIELD TYPES</h4>
-        <div class="flex">
-        <img class="iconz" src="../../static/full_grass.png"/> <span class="numb">9</span>
+            <h4>TYPES:</h4>
+                <div class="flex">
+                <img class="iconz" src="../../static/full_grass.png"/> <span class="numb">9</span>
+                </div>
+                <div class="flex">
+                <img class="iconz" src="../../static/full_turf.png"/> <span class="numb">5</span>
+                </div>
+                <div class="flex">
+                <img class="iconz" src="../../static/full_dirt.png"/> <span class="numb">4</span>
+                </div>
+                <div class="flex">
+                <img class="iconz" src="../../static/full_concrete.png"/> <span class="numb">3</span>
+            </div>
         </div>
-        <div class="flex">
-        <img class="iconz" src="../../static/full_turf.png"/> <span class="numb">5</span>
-        </div>
-        <div class="flex">
-        <img class="iconz" src="../../static/full_dirt.png"/> <span class="numb">4</span>
-        </div>
-        <div class="flex">
-        <img class="iconz" src="../../static/full_concrete.png"/> <span class="numb">3</span>
-        </div>
-        </div>
-
 
         <div class="coly">
-        <h4>FIELD TYPES</h4>
-        <div class="flex">
-        <img class="iconz" src="../../static/full_grass.png"/> <span class="numb">9</span>
+            <h4>DETAILS:</h4>
+            <div class="flex">
+                <img class="iconz" src="../../static/full_parking.png"/> &nbsp;&nbsp;<span class="numb">9</span>
+                </div>
+                <div class="flex">
+                <img class="iconz" src="../../static/full_restrooms.png"/> &nbsp;&nbsp; <span class="numb">5</span>
+                </div>
+                <div class="flex">
+                <img class="iconz" src="../../static/full_water.png"/> &nbsp;&nbsp;<span class="numb">4</span>
+                </div>
+                <div class="flex">
+                <img class="iconz" src="../../static/full_lights.png"/> &nbsp;&nbsp;<span class="numb">3</span>
+            </div>
         </div>
-        <div class="flex">
-        <img class="iconz" src="../../static/full_turf.png"/> <span class="numb">5</span>
-        </div>
-        <div class="flex">
-        <img class="iconz" src="../../static/full_dirt.png"/> <span class="numb">4</span>
-        </div>
-        <div class="flex">
-        <img class="iconz" src="../../static/full_concrete.png"/> <span class="numb">3</span>
-        </div>
-        </div>
-        </div>
-
-
-
-        <span><img class="logo animated slideInLeft" src="../../static/grey.png">
+  </div>
+      <span><img class="logo animated slideInLeft" src="../../static/grey.png">
 </span>
 
 </div>
 </div>
 </template>
-
 
 <script>
 import VueChart from 'vue-chart-js'
@@ -166,7 +177,7 @@ export default {
       legend: {
         display: true,
         labels: {
-          defaultFontSize: '10px',
+          // defaultFontSize: '10px',
         }
       }
     },
@@ -204,6 +215,7 @@ export default {
   height: 35px;
   padding-top: 20px;
   margin-left: 100px;
+    /* margin-top: 100px; */
   /* justify-content: center; */
 }
 .head1 {
@@ -237,11 +249,6 @@ padding-right: 39px;
 color: #222222;
 padding-top: 4px;
 }
-/* .flex {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-} */
 
 .info-text {
   font-size: 10px;
@@ -556,12 +563,15 @@ h4 {
         padding-top: 14px;
     font-size: 12px;
     font-weight: 700;
-    color: #222;
+    color: #dcdada;
 }
 
 .coly-wrap {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
+  padding-left: 10px;
+  padding-right: 50px;
 }
 
 </style>

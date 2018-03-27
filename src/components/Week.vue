@@ -47,6 +47,8 @@
                :field="field"
                v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Saturday'">
 
+           <button v-on:click="countUp"> Join </button>
+           <p>{{count}}</p>
       </Card>
       </div>
       <div id="Sunday">
@@ -73,7 +75,8 @@ export default {
   name: 'Week',
   data () {
     return {
-      data: []
+      data: [],
+      count: 1
     }
   },
   mounted () {
@@ -87,14 +90,16 @@ export default {
           this.data = data
           // console.log(data);
         })
+    },
+    countUp: function () {
+      this.count += 1
     }
   },
-    components: {
+  components: {
     Card
   }
 }
 </script>
-
 
 <style scoped>
 #Wrapper {
@@ -143,7 +148,6 @@ export default {
     0 0 40px rgba(0, 0, 0, 0.13) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.53) inset;
 } */
-
 
 h1 {
   text-align: center;

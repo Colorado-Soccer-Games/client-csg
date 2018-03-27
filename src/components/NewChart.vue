@@ -232,7 +232,6 @@ width: 500px;
   height: 14px;
 }
 
-
 .myChart {
   min-width: 55vw;
   /* padding-left:1rem; */
@@ -266,6 +265,5 @@ justify-content: flex-start;
   font-size: 12px;
           padding-top: 4px;
 }
-
 
 </style>
