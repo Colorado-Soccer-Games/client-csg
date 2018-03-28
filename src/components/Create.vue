@@ -179,7 +179,7 @@ export default {
   name: 'CreatedGame',
   data () {
     return {
-      baseURL: 'http://localhost:3000/games',
+      baseURL: 'https://protected-meadow-94841.herokuapp.com/games',
       CreatedGame: {
         location: '',
         city: ''

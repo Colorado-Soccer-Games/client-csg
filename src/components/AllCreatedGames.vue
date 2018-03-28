@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     load () {
-      fetch('http://localhost:3000/')
+      fetch('https://protected-meadow-94841.herokuapp.com/')
         .then(res => res.json())
         .then(data => {
           this.data = data

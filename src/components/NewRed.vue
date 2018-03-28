@@ -24,7 +24,7 @@ export default {
   },
   // eslint-disable-next-line
   mounted() {
-    const baseURL = 'http://localhost:3000/'
+    const baseURL = 'https://protected-meadow-94841.herokuapp.com/'
     fetch(baseURL, {
       method: 'GET'
     })

@@ -142,7 +142,7 @@ export default {
     },
     methods: {
       loadPeople () {
-        fetch('https://localhost:3000/')
+        fetch('https://protected-meadow-94841.herokuapp.com/')
           .then(response => response.json())
           .then(peopleVar => {
             this.people = peopleVar.people
