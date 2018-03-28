@@ -4,28 +4,28 @@ Web application for the people of Colorado to help organize & track data of acti
 ### Author **Ben Csasalino**
 ### Contact **BenCasalino@gmail.com**
 
-## Create Games Section
+#### Create Games Section
 Form to create and schedule a game.
 
-## Weekly Games Section
+#### Weekly Games Section
 Shows what games are created for each day.
 
-## Text Updates Games Section
+#### Text Updates Games Section
 Section to enter phone number and recieve updates.
 
-## Map Section
+#### Map Section
 Shows a map with markers for all scheduled games.
 
-## All Games Section
+#### All Games Section
 Displays all currently created games.
 
-## Data - 1 Weekly Stats
+#### Data - 1 Weekly Stats
 Displays game amounts per day of week.
 
-## Data - 2 Most Popular Fields
+#### Data - 2 Most Popular Fields
 Displays total players per game.
 
-## Data - 3 Most Active Games
+#### Data - 3 Most Active Games
 Displays total games completed.
 
 ## App Layout
