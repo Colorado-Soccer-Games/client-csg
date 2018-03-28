@@ -5,7 +5,7 @@ export default {
     return { games: [] }
   },
   mounted () {
-    const baseURL = 'https://protected-meadow-94841.herokuapp.com/';
+    const baseURL = 'https://protected-meadow-94841.herokuapp.com/'
     fetch(baseURL, {
       method: 'GET'
     })
