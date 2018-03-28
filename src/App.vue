@@ -42,7 +42,6 @@ import Edit from '@/components/Edit'
 import Footer from '@/components/Footer'
 
 // Global UI Components
-
 // Unused Components
 // import Resources from '@/components/Resources'
 // import About from '@/components/About'

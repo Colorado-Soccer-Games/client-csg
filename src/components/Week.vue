@@ -13,39 +13,39 @@
       <div id="Tuesday">
       <h1>TUESDAY</h1>
         <Card class="card"
-               :field="field" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Tuesday'">
+          :field="field" v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Tuesday'">
 
       </Card>
       </div>
       <div id="Wednesday">
       <h1>WEDNESDAY</h1>
         <Card class="card"
-               :field="field"
-               v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Wednesday'">
+          :field="field"
+          v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Wednesday'">
 
       </Card>
       </div>
       <div id="Thursday">
       <h1>THURSDAY</h1>
         <Card class="card"
-               :field="field"
-               v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Thursday'">
+          :field="field"
+          v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Thursday'">
 
       </Card>
       </div>
       <div id="Friday">
       <h1>FRIDAY</h1>
         <Card class="card"
-               :field="field"
-               v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Friday'">
+          :field="field"
+          v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Friday'">
 
       </Card>
       </div>
       <div id="Saturday">
       <h1>SATURDAY</h1>
         <Card class="card"
-               :field="field"
-               v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Saturday'">
+          :field="field"
+          v-bind:key="field.games" v-for="field in data.games" v-if="field.day == 'Saturday'">
       </Card>
       </div>
       <div id="Sunday">
@@ -58,7 +58,6 @@
 
       </Card>
       </div>
-      <!-- wrapper divs  -->
     </div>
     <br>
 <br>
@@ -72,8 +71,7 @@ export default {
   name: 'Week',
   data () {
     return {
-      data: [],
-      // count: 1
+      data: []
     }
   },
   mounted () {
@@ -87,7 +85,7 @@ export default {
           this.data = data
           // console.log(data);
         })
-    },
+    }
     // countUp: function () {
     //   this.count += 1
     // }

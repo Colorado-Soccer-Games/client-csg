@@ -12,12 +12,12 @@
               </div>
               <div class="deets">
                 <div class="split-left">
-                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span>{{field.info_water}}</p>
-                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span>{{field.info_restrooms}}</p>
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_water.png">&nbsp;| </span> {{field.info_water}} </p>
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_restrooms.png">&nbsp;| </span> {{field.info_restrooms}} </p>
                 </div >
                 <div class="split-right">
-                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span>{{field.info_parking}}</p>
-                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span>{{field.info_lights}}</p>
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_parking.png">&nbsp;|&nbsp;</span> {{field.info_parking}} </p>
+                <p class="label-info"><span class="label-field"><img class="bleh" src="../../static/full_lights.png">&nbsp;|&nbsp;</span> {{field.info_lights}} </p>
                 </div>
               </div>
               <div class="card-buttons">
@@ -25,9 +25,12 @@
                 <button class="save" v-on:click="countUp"> Save </button> -->
                 <div class="blimey">
                 <h4>Total:</h4>
-                <input disabled v-model='count' class="counter-style"> </input>
+                <input disabled
+                v-model='count'
+                class="counter-style">
+                </input>
                 </div>
-             <button class="join" v-on:click="countUp"> Join </button>
+                <button class="join" v-on:click="countUp"> Join </button>
                 <button class="save" v-on:click="countUp"> Save </button>
               </div>
           </span>
@@ -39,18 +42,18 @@ export default {
   name: 'Card',
   data () {
     return {
-     count: 1
+      count: 1
     }
   },
-    mounted () {
+  mounted () {
     this.load()
     this.count = this.field.stats_player_count
   },
-    methods: {
-      // put request
-      // this.count
-      // field @ field.id is what is being updated
-      // with the new count
+  methods: {
+  // put request
+  // this.count
+  // field @ field.id is what is being updated
+  // with the new count
     countUp: function () {
       this.count += 1
     }
@@ -58,35 +61,6 @@ export default {
   props: ['field']
 }
 </script>
-
-// export default {
-//   name: 'Card',
-//   data () {
-//     return {
-//       data: [],
-//       count: 1
-//     }
-//   },
-//   mounted () {
-//     this.load()
-//   },
-//   methods: {
-//     load () {
-//       fetch('http://localhost:3000/')
-//         .then(res => res.json())
-//         .then(data => {
-//           this.data = data
-//           // console.log(data);
-//         })
-//     },
-//     countUp: function () {
-//       this.count += 1
-//     }
-//   },
-//   components: {
-//     Card
-//   }
-// }
 
 <style scoped>
 
@@ -286,21 +260,21 @@ button:hover {
   font-size: 12px;
   padding-left: 2px;
   color:white;
-      font-weight: 300;
+  font-weight: 300;
 }
 
 .label-data {
   font-size: 12px;
   padding-left: 2px;
   color:black;
-    font-weight: 100;
+  font-weight: 100;
 }
 
 .label-info {
   font-size: 12px;
   padding-left: 2px;
   color:#aaa;
-      font-weight: 100;
+  font-weight: 100;
 }
 
 .bleh {
@@ -326,10 +300,8 @@ button:hover {
   max-width: 20px;
 }
 
-
-
 .blimey {
-display: flex;
+  display: flex;
   flex-direction: column;
 }
 </style>
